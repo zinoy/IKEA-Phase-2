@@ -143,7 +143,34 @@ h4.title a:hover{text-decoration:underline}
 
 /*****main content*****/
 .room_type li{float:right;margin-bottom:5px}
-.room_type li img{display:block}
+.room_type li a{background:url(../images/rooms.jpg) no-repeat;display:block;height:60px;width:124px}
+
+.room_type .r1{background-position:left -420px}
+.room_type .r2{background-position:left -180px}
+.room_type .r3{background-position:left -360px}
+.room_type .r4{background-position:left -60px}
+.room_type .r5{background-position:left -120px}
+.room_type .r6{background-position:left -540px}
+.room_type .r7{background-position:left -300px}
+.room_type .r8{background-position:left -660px}
+.room_type .r9{background-position:left top}
+.room_type .r10{background-position:left -600px}
+.room_type .r11{background-position:left -240px}
+.room_type .r12{background-position:left -480px}
+.room_type .r1:hover{background-position:-124px -420px}
+.room_type .r2:hover{background-position:-124px -180px}
+.room_type .r3:hover{background-position:-124px -360px}
+.room_type .r4:hover{background-position:-124px -60px}
+.room_type .r5:hover{background-position:-124px -120px}
+.room_type .r6:hover{background-position:-124px -540px}
+.room_type .r7:hover{background-position:-124px -300px}
+.room_type .r8:hover{background-position:-124px -660px}
+.room_type .r9:hover{background-position:-124px top}
+.room_type .r10:hover{background-position:-124px -600px}
+.room_type .r11:hover{background-position:-124px -240px}
+.room_type .r12:hover{background-position:-124px -480px}
+
+
 .hfcenter .rooms{background:url(../images/accordion_home.gif) no-repeat;display:block;height:20px;margin-bottom:10px}
 .hfcenter .rooms.on{background:url(../images/accordion_home.gif) no-repeat left -20px;height:20px}
 .hfcenter .hot{background:url(../images/accordion_home.gif) no-repeat left -40px;clear:left;display:block;height:20px;margin-bottom:10px}

@@ -23,8 +23,8 @@ $(document).ready(function(){
         });
         $(document).pngFix();
     }
-    $('.room_type li a').mouseover(swapImg);
-    $('.room_type li a').mouseout(swapImg);
+    //$('.room_type li a').mouseover(swapImg);
+    //$('.room_type li a').mouseout(swapImg);
     $('#userSignin').submit(function(){
         var values = $('#userSignin').serializeObject();
         $.post(path_root + 'ajaxLogin.action', $('#userSignin').serialize(), function(data){
