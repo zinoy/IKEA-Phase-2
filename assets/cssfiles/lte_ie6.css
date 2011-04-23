@@ -1,0 +1,7 @@
+#userSignin p,.popup .register p,.popup .signin p,.popup .forgetForm p{height:auto;margin-bottom:10px}
+.topic_detail .sub div{margin:0}
+.tabBox{padding-bottom:15px}
+.user_edit .arrow{bottom:-1px}
+.event_detail2 .detail .arrow{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/images/events/event_arrow.png', sizingMethod='scale');left:3px}
+#userSignin .login_way{margin-right:3px}
+.subarr .arrow{bottom:-1px}
