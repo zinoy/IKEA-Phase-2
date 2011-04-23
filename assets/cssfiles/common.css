@@ -133,6 +133,10 @@ h4.title a:hover{text-decoration:underline}
 .rank1{background-position:left -65px !important}
 .rank2{background-position:left -85px !important}
 .rank3{background-position:left -105px !important}
+.hot1{background-position:left -434px !important}
+.hot2{background-position:left -454px !important}
+.hot3{background-position:left -474px !important}
+.hot4{background-position:left -494px !important}
 .combo_box .iconList{margin-bottom:0}
 .combo_box .iconList dd{float:right;margin:0 0 0 10px}
 .whats_new .combo_box .iconList{margin-top:3px}
@@ -168,6 +172,19 @@ h4.title a:hover{text-decoration:underline}
 
 .ikea_events .bar span{background-position:left -100px}
 .ikea_events .intro{padding:15px 0 0}
+
+.discussion h2 span{background-position:left -160px}
+.discussion li{clear:both;height:50px;margin-bottom:10px;overflow:hidden}
+.discussion img{float:left}
+.discussion .bubble{-webkit-border-radius:2px 2px;-moz-border-radius:  2px/2px;border:solid 1px #b2b2b2;border-radius:2px/2px;float:right;height:42px;padding:0 8px 6px 10px;position:relative;width:370px}
+.discussion li.alt .bubble{background-color:#efefef}
+.discussion .iconList{margin:8px 0}
+.discussion .bubble strong{border-left:solid 1px #000;border-right:solid 1px #000;padding:0 5px}
+.discussion .bubble b{color:#a2a2a2;float:right;font-size:10px;font-weight:normal}
+.discussion .bubble span{color:#787878}
+.discussion .bubble i{background:url(../images/bubble_arrow.gif) no-repeat;font-size:0;height:9px;left:-6px;position:absolute;top:6px;width:6px;z-index:2}
+.discussion li.alt .bubble i{background-position:left -9px}
+.discussion .bLine{padding-top:5px}
 
 /*****widget*****/
 .slidebar_holder{font-size:0;position:relative}
