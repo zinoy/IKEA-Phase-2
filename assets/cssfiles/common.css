@@ -100,7 +100,7 @@ a:focus{outline:none}
 #foot .icon a{display:block;height:32px}
 /*****footer end*****/
 
-#content{clear:both}
+#content{background:url(../images/bgline.gif) repeat-y;clear:both;float:left;width:960px}
 h2{margin:0 0 15px}
 h2.bar{background-color:#ffbe0a;font-size:0;height:20px;padding-left:10px}
 h2.bar span{background:url(../images/h2Txt.gif) no-repeat;display:block;height:20px;text-indent:-9999px}
@@ -112,8 +112,8 @@ h4.title a:hover{text-decoration:underline}
 .combo_box h4.title{float:left;margin-top:12px}
 .whats_new .combo_box{margin-top:5px}
 .whats_new .combo_box h4.title{margin:0}
-#contCol{border-right:solid 1px #e6e6e6;padding-right:20px;width:740px}
-#leftCol{border-right:solid 1px #e6e6e6;padding-right:20px;width:250px}
+#contCol{padding-right:21px;width:740px}
+#leftCol{padding-right:21px;width:250px}
 #mainCol{width:450px}
 #userCol{width:180px}
 #userBar{clear:both;height:28px}
@@ -142,6 +142,8 @@ h4.title a:hover{text-decoration:underline}
 .whats_new .combo_box .iconList{margin-top:3px}
 
 /*****main content*****/
+.acc{overflow:hidden}
+.room_type{height:390px}
 .room_type li{float:right;margin-bottom:5px}
 .room_type li img{display:block}
 .hfcenter .rooms{background:url(../images/accordion_home.gif) no-repeat;display:block;height:20px;margin-bottom:10px}
@@ -189,9 +191,9 @@ h4.title a:hover{text-decoration:underline}
 .rate_room h2 span{background-position:left -180px}
 .rate_room li{float:left;margin-left:13px;width:141px}
 .rate_room li.f{margin-left:0}
-.rate_room li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;text-decoration:none}
+.rate_room li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
 .rate_room li .title:hover{text-decoration:underline}
-.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;display:inline-block;height:17px}
+.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
 .rate_room li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
 .rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
 .rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
@@ -241,11 +243,11 @@ h4.title a:hover{text-decoration:underline}
 .poll form .result{margin-left:10px}
 
 .hot_tags h2 span{background-position:left -140px}
-.hot_tags ul{border:solid 1px #d8d8d8;overflow:hidden;padding:8px 2px 2px 8px}
+.hot_tags ul{border:solid 1px #d8d8d8;float:left;padding:8px 2px 2px 8px;width:168px}
 .hot_tags ul li{float:left;height:34px;margin-bottom:6px;margin-left:6px;}
-.hot_tags ul a{color:#000;text-decoration:none}
+.hot_tags ul a{color:#000;text-decoration:none;white-space:nowrap}
 .hot_tags ul a:hover{text-decoration:underline}
-.hot_tags .s1{font-size:24px}
+.hot_tags .s1{font-size:24px;font-weight:600}
 .hot_tags .s2{color:#333;font-size:21px}
 .hot_tags .s3{color:#666;font-size:18px}
 .hot_tags .s4{color:#808080;font-size:16px}
