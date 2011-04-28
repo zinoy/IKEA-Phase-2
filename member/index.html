@@ -18,9 +18,10 @@
   <![endif]-->
 </head>
 <body class="member">
+  <div class="extlink"></div>
   <div id="container">
-  	<div id="head" role="banner">
-      <h1 id="siteLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h1>
+  	<div id="head" class="panel" role="banner">
+      <h1 id="siteLogo"><a href="../index.html" title="宜家社区" target="_blank"></a><span class="beta"></span></h1>
 	  <div id="mainNav">
 	  	<div class="lfloat">
 	  	  <ul id="pageNav" role="navigation">
@@ -40,77 +41,372 @@
           	</div>
           </form>
 		</div>
+		<div class="rfloat cfloat userBar">[用户名], 欢迎回来
+		  <a href="index.html" class="icon">个人中心</a>
+		  <a href="#logout" class="icon">退出</a>
+        </div>
 	  </div>
   	</div>
-	<div id="content">
-	  <div id="userBar">
-		<dl>
-		  <dd class="lside"><a href="#" class="gbtn"><span>个人中心</span></a></dd>
-		  <dd><a href="logout" class="gbtn"><span>注销退出</span></a></dd>
-		</dl>
-	  	<span>IKEA用户，欢迎回到梦想家！</span>
-	  </div>
+    <div id="splitBar"></div>
+    <div id="content" class="panel">
       <div id="contCol" class="lfloat">
-      	<dl class="subnav">
-      	  <dd class="on"><a href="account.html" class="home">我的主页</a></dd>
-		  <dd><a href="account.html" class="edit">编辑个人信息</a></dd>
-      	</dl>
-		<div class="bLine">
-		  <span></span>
-		</div>
-		<div class="user_state">
-		  <h5>我的最新动态</h5>
-		  <ul class="states_list">
-			<li class="alt">
-			  <div class="border">
-                <strong class="comment">我对 <a href="#">挑战宜家</a> 评论道：</strong>
-			    <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果，这种不需锤子和钉子的布置受到很多年轻家庭的喜爱。</p>
-				<div class="info">
-				  <a href="#" class="btn delete"><span class="hidden_elem">删除</span></a>
-				  <a href="#" target="_blank" class="btn view"><span class="hidden_elem">查看</span></a>
-				  <span>2011-03-03 14:56</span>
-				</div>
-			  </div>
-		    </li>
-			<li>
-			  <div class="border">
-                <strong class="like">我喜欢 <a href="#">挑战宜家</a></strong>
-				<div class="info">
-				  <a href="#" target="_blank" class="btn view"><span class="hidden_elem">查看</span></a>
-				  <span>2011-03-03 14:56</span>
-				</div>
-			  </div>
-		    </li>
-		  </ul>
-		  <div class="pager">
-		  	<div class="rfloat"><a href="#" class="next"><span class="hidden_elem">下一页</span></a></div>
-			<div class="lfloat"><a href="#" class="prev"><span class="hidden_elem">上一页</span></a></div>
-			<div class="mid"><span>1</span><a href="#">2</a><a href="#">3</a></div>
+        <div id="leftCol" class="lfloat">
+		  <div class="box user_info">
+            <div class="user_avatar">
+          	  <img src="../assets/images/temp/head_180.jpg" height="180" width="178" alt="用户名称" />
+			  <h4>用户名<img src="../assets/images/members/card.gif" height="26" width="37" alt="IKEA Family会员卡" /></h4>
+            </div>
+		    <p class="relation">
+		      <span class="f"><i>62</i>我关注</span>
+			  <span><i>35</i>关注我</span>
+			  <span><i>26</i>话题</span>
+		    </p>
+		    <div class="user_bio">
+		  	  <p><label>加入时间：</label>2011-02-19</p>
+			  <p><label>商场：</label>上海徐汇</p>
+			  <p><label>个人描述：</label>我是美女！</p>
+			  <p>
+                <label>标签：</label>
+			    <dl class="tags">
+                  <dd><a href="#">标签1</a></dd>
+                  <dd><a href="#">标签2</a></dd>
+                  <dd><a href="#">标签3</a></dd>
+                </dl>
+              </p>
+		    </div>
+		    <ul class="user_nav">
+		  	  <li><a href="#" class="editAvatar" title="修改头像"><span class="hidden_elem">修改头像</span></a></li>
+		  	  <li><a href="#" class="editProfile" title="修改资料"><span class="hidden_elem">修改资料</span></a></li>
+		  	  <li><a href="#" class="bindCard" title="绑定会员卡"><span class="hidden_elem">绑定会员卡</span></a></li>
+		    </ul>
 		  </div>
-		</div>
+		  <div class="box user_activity">
+		  	<h2 class="bar"><span>我的活动</span></h2>
+			<ul class="member_list">
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			</ul>
+            <div class="bLine">
+              <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+              <span></span>
+            </div>
+		  </div>
+		  <div class="box bottom user_group">
+		  	<h2 class="bar"><span>我的群组</span></h2>
+			<ul class="member_list">
+			  <li><a href="#">宜家风格馆</a></li>
+			  <li><a href="#">宜家风格馆</a></li>
+			  <li><a href="#">宜家风格馆</a></li>
+			</ul>
+            <div class="bLine">
+              <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+              <span></span>
+            </div>
+		  </div>
+        </div>
+        <div id="mainCol" class="rfloat">
+          <div class="box user_states">
+          	<dl class="usertab">
+          	  <dd class="on"><a href="#" class="stateAll"><span class="hidden_elem">全部动态</span></a></dd>
+          	  <dd><a href="#" class="stateMine"><span class="hidden_elem">我的动态</span></a></dd>
+          	  <dd><a href="#" class="stateFriends"><span class="hidden_elem">关注的人动态</span></a></dd>
+          	</dl>
+			<div class="cfloat tabpanel">
+			  <ul class="member_list">
+			    <li>
+			  	  <span>我对 <a href="#">挑战宜家</a> 评论道：</span>
+			      <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果。</p>
+				  <i>2011-4-28 16:21</i>
+			    </li>
+			    <li>
+			  	  <span><a href="#">Jerry</a> 发表了新话题 <a href="#">话题标题示例文字话题标题示例文字</a> ：</span>
+			      <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果。</p>
+				  <img src="../assets/images/temp/rate1.jpg" height="82" width="141" alt="插图" />
+				  <i>2011-4-28 16:21</i>
+			    </li>
+			    <li>
+			  	  <span><a href="#">Jenny</a> 更新了个人资料</span>
+				  <i>2011-4-28 16:21</i>
+			    </li>
+			    <li>
+			  	  <span><a href="#">Jocyce wang</a> 关注了我</span>
+				  <i>2011-4-28 16:21</i>
+			    </li>
+			  </ul>
+              <div class="bLine">
+                <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+                <span></span>
+              </div>
+			</div>
+          </div>
+          <div class="bLine">
+            <span></span>
+          </div>
+          <div class="box user_topics">
+          	<dl class="usertab">
+          	  <dd class="on"><a href="#" class="topicMine"><span class="hidden_elem">我的话题</span></a></dd>
+          	  <dd><a href="#" class="favorites"><span class="hidden_elem">我的收藏</span></a></dd>
+          	  <dd><a href="#" class="topicHot"><span class="hidden_elem">推荐话题</span></a></dd>
+          	</dl>
+			<div class="cfloat tabpanel">
+			  <ul class="member_list">
+			    <li><span><b>106回复</b><strong><a href="#">组名称</a></strong><a href="#">话题标题示例文字话题标题示例文字</a></span></li>
+			    <li><span><b>106回复</b><strong><a href="#">组名称</a></strong><a href="#">话题标题示例文字话题标题示例文字</a></span></li>
+			    <li><span><b>106回复</b><strong><a href="#">组名称</a></strong><a href="#">话题标题示例文字话题标题示例文字</a></span></li>
+			    <li><span><b>106回复</b><strong><a href="#">组名称</a></strong><a href="#">话题标题示例文字话题标题示例文字</a></span></li>
+			    <li><span><b>106回复</b><strong><a href="#">组名称</a></strong><a href="#">话题标题示例文字话题标题示例文字</a></span></li>
+			  </ul>
+              <div class="bLine">
+                <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+                <span></span>
+              </div>
+			</div>
+          </div>
+		  <div class="box bottom user_photos">
+		    <h2 class="bar"><span>我的图片</span></h2>
+            <ul>
+              <li class="f">
+                <a href="#"><img src="../assets/images/temp/rate1.jpg" height="82" width="141" alt="相片名称" /></a>
+                <a href="#" class="title">相片名称</a>
+                <a class="vote"><i></i><b></b><span>(256人喜欢)</span></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/images/temp/rate2.jpg" height="82" width="141" alt="相片名称" /></a>
+                <a href="#" class="title">相片名称</a>
+                <a class="vote"><i></i><b></b><span>(256人喜欢)</span></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/images/temp/rate3.jpg" height="82" width="141" alt="相片名称" /></a>
+                <a href="#" class="title">相片名称</a>
+                <a class="vote"><i></i><b></b><span>(256人喜欢)</span></a>
+              </li>
+            </ul>
+            <div class="bLine">
+              <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+              <span></span>
+            </div>
+		  </div>
+        </div>
       </div>
-	  <div id="userCol" class="rfloat">
-	  	<div class="widget user_info">
-	  	  <div class="user_avatar">
-	  	  	<img src="../assets/images/users/user_sample.jpg" alt="用户名" height="130" width="130" />
-	  	  </div>
-		  <h4>IKEA用户<img src="../assets/images/members/card.gif" alt="已绑定会员卡" height="33" width="49" /></h4>
-		  <div class="user_bio">
-		  	<p><label>加入时间：</label>2011-02-19</p>
-			<p><label>商场：</label>上海徐汇</p>
-			<p><label>个人描述：</label>我是美女！</p>
-		  </div>
+  	  <div id="userCol" class="rfloat">
+        <div class="slidebar_holder">
+          <ul id="sliderbar">
+            <li class="top"></li>
+            <li class="house">
+              <a href="#" title="返回首页"><img src="../assets/images/slider_house.gif" alt="首页" height="12" width="16" /></a>
+            </li>
+            <li>
+              <a href="#share" title="分享到新浪微博"><img src="../assets/images/center/icons/share_weibo.gif" alt="新浪微博" height="12" width="12" /></a>
+            </li>
+            <li>
+              <a href="#" title="分享到开心网"><img src="../assets/images/center/icons/share_kaixin001.gif" alt="开心网" height="12" width="12" /></a>
+            </li>
+            <li>
+              <a href="#" title="分享到人人网"><img src="../assets/images/center/icons/share_renren.gif" alt="人人网" height="12" width="12" /></a>
+            </li>
+            <li class="bottom"></li>
+  	  	  </ul>
+  	  	</div>
+		<div class="widget user_follow">
+		  <h2 class="bar"><span>我的关注</span></h2>
+		  <ul>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head1.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+		  	  	<img src="../assets/images/members/card_s.gif" alt="认证会员" height="15" width="22" class="card" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head2.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head3.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head7.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head6.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  </ul>
 		  <div class="bLine">
-		    <span></span>
+            <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+  			<span></span>
 		  </div>
-	  	</div>
-	  </div>
-	</div>
-	<div class="bottomClear"></div>
-	<div id="foot" class="cfloat">
-	  <span class="icon"></span>
-	  <p><span>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="#" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备012345号</a></span><a href="http://www.ikea.com/ms/zh_CN/virtual_catalogue/online_catalogues.html" target="_blank">2011 宜家《家居指南》</a> / <a href="http://www.ikea.com/ms/zh_CN/customer_service/splash.html" target="_blank">客户服务</a> / <a href="http://www.ikea.com/ms/zh_CN/about_ikea/index.html" target="_blank">关于宜家</a> / <a href="http://www.ikea.com/cn/zh/" target="_blank">加入我们</a> / <a href="http://www.ikea.com/ms/zh_CN/ikea_family/index.html" target="_blank">IKEA FAMILY 宜家俱乐部</a></p>
-	</div>
+		</div>
+		<div class="widget user_followed">
+		  <h2 class="bar"><span>我的粉丝</span></h2>
+		  <ul>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head1.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+		  	  	<img src="../assets/images/members/card_s.gif" alt="认证会员" height="15" width="22" class="card" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head2.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head3.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head7.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head6.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  </ul>
+		  <div class="bLine">
+            <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+  			<span></span>
+		  </div>
+		</div>
+		<div class="widget bottom user_maybe">
+		  <h2 class="bar"><span>可能感兴趣的人</span></h2>
+		  <ul>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head1.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+		  	  	<img src="../assets/images/members/card_s.gif" alt="认证会员" height="15" width="22" class="card" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head2.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head3.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head4.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li class="lside">
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head7.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head6.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  	<li>
+		  	  <a href="#">
+		  	  	<img src="../assets/images/temp/head5.jpg" alt="" height="48" width="48" />
+    			<p>无敌鑫小宝</p>
+		  	  </a>
+  			</li>
+		  </ul>
+		  <div class="bLine">
+            <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+  			<span></span>
+		  </div>
+		</div>
+  	  </div>
+  	</div>
+  	<br class="floatClear" />
+  </div>
+  <div id="foot" class="cfloat">
+  	<h2 id="ikeaLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h2>
+  	<p>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="terms_policy.html" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备09045065号</a></p>
   </div>
   <script type="text/javascript" src="../assets/scripts/jquery.js"></script>
   <script type="text/javascript" src="../assets/scripts/jquery.pngFix.js"></script>

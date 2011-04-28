@@ -94,6 +94,13 @@ a:focus{outline:none}
 #pageNav li.navMedia a.on,#pageNav li.navMedia a:hover{background-position:left -109px}
 #pageNav li.navSquare a.on,#pageNav li.navSquare a:hover{background-position:left -145px}
 #pageNav li i{background:url(../images/icons.gif) no-repeat center -529px;display:inline-block;font-size:0;height:7px;margin-top:29px;width:100%}
+
+.userBar{font-size:10px}
+.userBar dd,.userBar dt{float:right;}
+.userBar a{color:#323232;height:20px;line-height:20px;text-decoration:none}
+.userBar a:hover{text-decoration:underline}
+.userBar .icon{background:url(../images/icons.gif) no-repeat left -511px;margin-left:6px;padding-left:8px}
+
 /*****header end*****/
 
 /*****footer start*****/
@@ -109,6 +116,8 @@ a:focus{outline:none}
 /*****footer end*****/
 
 #content{background:url(../images/bgline.gif) repeat-y;clear:both;float:left;width:940px}
+.member #content{background-image:url(../images/bgline_m.gif)}
+
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px}
 h2.bar span{background:url(../images/h2Txt.gif) no-repeat;display:block;height:20px;text-indent:-9999px}
@@ -122,7 +131,9 @@ h4.title a:hover{text-decoration:underline}
 .whats_new .combo_box h4.title{margin:0}
 #contCol{width:710px}
 #leftCol{padding-right:21px;width:200px}
+.member #leftCol{width:178px}
 #mainCol{width:460px}
+.member #mainCol{width:482px}
 #userCol{width:180px}
 #splitBar{border-top:solid 5px #ecebdf;clear:both;height:28px}
 /*#userBar dl{float:right;width:180px}
@@ -148,6 +159,10 @@ h4.title a:hover{text-decoration:underline}
 .combo_box .iconList{margin-bottom:0}
 .combo_box .iconList dd{float:right;margin:0 0 0 10px}
 .whats_new .combo_box .iconList{margin-top:3px}
+
+.tags dd{float:left;margin:0 2px 2px 0}
+.tags dd a{background-color:#b4b4b4;color:#fff;display:block;height:17px;line-height:17px;text-align:center;text-decoration:none;width:68px}
+.member .tags a{background-color:#d8d8d8;color:#323232;padding:0 10px;width:auto}
 
 /*****main content*****/
 .acc{overflow:hidden}
@@ -203,14 +218,14 @@ h4.title a:hover{text-decoration:underline}
 .discussion .bLine{padding-top:5px}
 
 .rate_room h2 span{background-position:left -160px}
-.rate_room li{float:left;margin-left:18px;width:141px}
-.rate_room li.f{margin-left:0}
-.rate_room li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
-.rate_room li .title:hover{text-decoration:underline}
-.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
-.rate_room li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
-.rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
-.rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
+.rate_room li,.user_photos li{float:left;margin-left:18px;width:141px}
+.rate_room li.f,.user_photos li.f{margin-left:0}
+.rate_room li .title,.user_photos li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
+.rate_room li .title:hover,.user_photos li .title:hover{text-decoration:underline}
+.rate_room li .vote,.user_photos li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
+.rate_room li .vote span,.user_photos li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
+.rate_room li .vote b,.user_photos li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
+.rate_room li .vote i,.user_photos li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
 
 /*****widget*****/
 .slidebar_holder{font-size:0;position:relative}
@@ -242,13 +257,13 @@ h4.title a:hover{text-decoration:underline}
 .home .poll .bar span{background-position:left -60px}
 
 .activity_users .bar span{background-position:left -120px}
-.activity_users li{float:left;margin-bottom:10px;margin-left:17px;position:relative}
-.activity_users li.lside{margin-left:0}
-.activity_users img{display:block;margin-bottom:3px}
-.activity_users a{color:#323232;text-decoration:none}
-.activity_users .card{left:-6px;position:absolute;top:52px}
-.activity_users p{cursor:pointer;font-size:10px;height:25px;line-height:12px;overflow:hidden;padding-left:15px;width:33px}
-.activity_users .bLine{padding-top:6px}
+.activity_users li,.user_follow li,.user_followed li,.user_maybe li{float:left;margin-bottom:10px;margin-left:17px;position:relative}
+.activity_users li.lside,.user_follow li.lside,.user_followed li.lside,.user_maybe li.lside{margin-left:0}
+.activity_users img,.user_follow img,.user_followed img,.user_maybe img{display:block;margin-bottom:3px}
+.activity_users a,.user_follow a,.user_followed a,.user_maybe a{color:#323232;text-decoration:none}
+.activity_users .card,.user_follow .card,.user_followed .card,.user_maybe .card{left:-6px;position:absolute;top:52px}
+.activity_users p,.user_follow p,.user_followed p,.user_maybe p{cursor:pointer;font-size:10px;height:25px;line-height:12px;overflow:hidden;padding-left:15px;width:33px}
+.activity_users .bLine,.user_follow .bLine,.user_followed .bLine,.user_maybe .bLine{padding-top:6px}
 
 .poll p{color:#787878;margin-bottom:10px}
 .poll dl{float:left;margin-bottom:15px}
@@ -267,6 +282,17 @@ h4.title a:hover{text-decoration:underline}
 .hot_tags .s4{color:#808080;font-size:16px}
 .hot_tags .s5{color:#999;font-size:14px}
 .hot_tags .s6{color:#999;font-size:12px}
+
+.logined .bg{background-color:#e6e6e6;position:relative}
+.logined h4{font-size:14px;margin:3px 0 0;overflow:hidden;padding-left:4px}
+.logined .user_avatar{padding:13px 0 0 16px}
+.logined .user_avatar div{width:111px}
+.logined .user_avatar div img{margin-top:5px}
+.logined .exit{background:url(../images/members/exit.gif) no-repeat;font-size:0;height:10px;position:absolute;right:5px;top:5px;width:35px}
+.relation{clear:both;float:left;padding:10px 8px;width:164px}
+.relation span{border-left:solid 1px #b8b8b8;color:#323232;float:left;font-weight:bold;text-align:center;width:80px}
+.relation span.f{border:0}
+.relation span i{color:#000;display:block;font:30px Verdana,Geneva,Arial,Helvetica,sans-serif}
 
 /*****hf center*****/
 .list{float:left}
@@ -337,8 +363,6 @@ h4.title a:hover{text-decoration:underline}
 .topic_detail .detail .intro .summary{padding:0}
 .topic_detail .tags{height:60px;padding-bottom:10px}
 .topic_detail .title{background:url(../images/center/topicTitle.gif) no-repeat;font-size:0;height:12px;margin-bottom:9px;text-indent:-9999px}
-.topic_detail .tags dd{float:left;margin:0 2px 2px 0}
-.topic_detail .tags dd a{background-color:#b4b4b4;color:#fff;display:block;height:17px;line-height:17px;text-align:center;text-decoration:none;width:68px}
 .topic_detail .sub div{float:left;margin-left:14px;overflow:hidden;position:absolute;width:259px}
 .topic_detail .sub ul{height:50px;overflow:visible;width:2000px}
 .topic_detail .sub li{display:inline;float:left;margin-right:2px;position:relative}
@@ -374,6 +398,7 @@ h4.title a:hover{text-decoration:underline}
 .comments_list li p{clear:both;color:#787878;margin-top:10px}
 
 /*****member*****/
+.member h2 span{background:url(../images/h2TxtM.gif) no-repeat}
 .subnav dd{float:left;margin-right:10px}
 .subnav a{background:url(../images/icons.gif) no-repeat;color:#787878;display:block;font-weight:bold;padding-left:16px;text-decoration:none}
 .subnav a:hover,.subnav .on a{color:#000}
@@ -401,19 +426,27 @@ h4.title a:hover{text-decoration:underline}
 .user_state .states_list li .delete{background-position:right -33px;}
 .user_state .pager{margin-left:33px}
 
-.user_info .bg{background-color:#e6e6e6;position:relative}
-.user_info h4{font-size:14px;margin:3px 0 0;overflow:hidden;padding-left:4px}
-.user_avatar{padding:13px 0 0 16px}
-.user_avatar div{width:111px}
-.user_avatar div img{margin-top:5px}
-.user_info .relation{clear:both;float:left;padding:10px 8px;width:164px}
-.user_info .relation span{border-left:solid 1px #b8b8b8;color:#323232;float:left;font-weight:bold;text-align:center;width:80px}
+.user_info .user_avatar h4{font-size:14px;margin:3px 0 10px}
+.user_info .relation{border-bottom:solid 1px #e6e6e6;border-top:solid 1px #e6e6e6;clear:both;float:left;padding:4px 0;width:178px}
+.user_info .relation span{border-left:solid 1px #e6e6e6;color:#323232;float:left;font-weight:bold;text-align:center;width:58px}
 .user_info .relation span.f{border:0}
-.user_info .relation span i{color:#000;display:block;font:30px Verdana,Geneva,Arial,Helvetica,sans-serif}
+.user_info .relation span i{color:#000;display:block;font:24px Verdana,Geneva,Arial,Helvetica,sans-serif}
 .user_info .exit{background:url(../images/members/exit.gif) no-repeat;font-size:0;height:10px;position:absolute;right:5px;top:5px;width:35px}
 
-.user_bio p{color:#787878;margin-top:20px}
-.user_bio label{color:#323232;display:block;font-weight:bold;margin-bottom:2px}
+.user_bio{clear:left;float:left;margin-bottom:20px;padding-top:10px}
+.user_bio p{color:#323232;margin-top:5px}
+.user_bio label{font-weight:bold;margin-bottom:2px}
+
+.user_nav{border-bottom:solid 1px #e6e6e6;border-top:solid 1px #e6e6e6;clear:left;padding:15px 0 9px}
+.user_nav li{margin-bottom:6px}
+.user_nav a{background:url(../images/members/userNav.gif) no-repeat;display:block;height:17px;width:96px}
+.user_nav .editAvatar{background-position:left top}
+.user_nav .editProfile{background-position:left -17px}
+.user_nav .bindCard{background-position:left -34px}
+
+.member_list li{background:url(../images/members/member_listicon.gif) no-repeat 2px 12px;border-bottom:solid 1px #e6e6e6;height:30px;line-height:30px;text-indent:11px}
+.member_list li a{color:#323232;text-decoration:none}
+.member_list li a:hover{text-decoration:underline}
 
 .pager{clear:both;height:15px;margin-top:17px;text-align:center}
 .pager a,.pager span{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background-color:#b4b4b4;color:#fff;display:inline-block;font:10px/15px Verdana;height:15px;margin:0 1px;padding:0 4px;text-decoration:none}
@@ -440,6 +473,10 @@ h4.title a:hover{text-decoration:underline}
 .subarr.t1 .arrow{left:157px}
 .subarr.t2 .arrow{left:290px}
 .subarr.t3 .arrow{left:421px}
+
+.user_activity h2,.user_group h2{margin:0}
+.user_activity h2 span{background-position:left -40px}
+.user_group h2 span{background-position:left -80px}
 
 .user_edit .tabBox div{clear:left;float:left;margin-bottom:10px}
 .user_edit .tabBox div div{clear:none;float:none}
@@ -477,6 +514,41 @@ h4.title a:hover{text-decoration:underline}
 .user_edit .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center #414141;height:64px;margin:0 2px 0 0;width:12px}
 .user_edit .sub .next{background:url(../images/slidebtns.gif) no-repeat right center #414141;float:right;height:64px;margin:0;width:12px}
 .user_edit .sub span a{display:block;height:64px}
+
+.usertab{float:left}
+.usertab dd{float:left;margin-right:3px}
+.usertab dd a{background:url(../images/tabTxtM.gif) no-repeat;display:block;height:23px}
+.usertab dd.on a{height:25px;margin-bottom:-2px}
+.usertab .stateAll{width:83px}
+.usertab .stateMine{background-position:-83px top;width:84px}
+.usertab .stateFriends{background-position:-167px top;width:110px}
+.usertab .topicMine{background-position:-277px top;width:83px}
+.usertab .favorites{background-position:-360px top;width:84px}
+.usertab .topicHot{background-position:-444px top;width:84px}
+
+.usertab .on .stateAll{background-position:left -23px}
+.usertab .on .stateMine{background-position:-83px -23px}
+.usertab .on .stateFriends{background-position:-167px -23px}
+.usertab .on .topicMine{background-position:-277px -23px}
+.usertab .on .favorites{background-position:-360px -23px}
+.usertab .on .topicHot{background-position:-444px -23px}
+
+.tabpanel{background-color:#faf9f4;border:solid 2px #e3e0d4;padding:15px}
+.tabpanel .member_list li{height:auto;line-height:18px;text-indent:0}
+.tabpanel .member_list li span{color:#323232;line-height:30px;padding-left:11px}
+.tabpanel .member_list li span a{text-decoration:underline}
+.tabpanel .member_list li p{color:#787878}
+.tabpanel .member_list li img{margin-top:5px}
+.tabpanel .member_list li i{color:#b4b4b4;display:block;font-style:normal;line-height:25px;text-align:right}
+.tabpanel .member_list li b{background:url(../images/icons.gif) no-repeat left -35px;float:right;font-size:10px;font-weight:normal;padding-left:16px}
+.tabpanel .member_list li strong{border-left:solid 1px #000;border-right:solid 1px #000;color:#323232;margin:0 8px 0 6px;padding:0 6px}
+.tabpanel .member_list li strong a{text-decoration:none}
+.tabpanel .member_list li strong a:hover{text-decoration:underline}
+
+.user_photos h2 span{background-position:left -100px}
+.user_follow h2 span{background-position:left top}
+.user_followed h2 span{background-position:left -20px}
+.user_maybe h2 span{background-position:left -60px}
 
 /*****event*****/
 .event_news .bar span{background-position:left -140px}
