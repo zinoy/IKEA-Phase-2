@@ -124,9 +124,9 @@ h4.title a:hover{text-decoration:underline}
 #leftCol{padding-right:21px;width:200px}
 #mainCol{width:460px}
 #userCol{width:180px}
-#userBar{border-top:solid 5px #ecebdf;clear:both;height:28px}
-#userBar dl{float:right;width:180px}
-#userBar dl dd{float:right}
+#splitBar{border-top:solid 5px #ecebdf;clear:both;height:28px}
+/*#userBar dl{float:right;width:180px}
+#userBar dl dd{float:right}*/
 
 
 /*****icons*****/
@@ -401,9 +401,17 @@ h4.title a:hover{text-decoration:underline}
 .user_state .states_list li .delete{background-position:right -33px;}
 .user_state .pager{margin-left:33px}
 
-.user_avatar img{display:block}
-.user_info h4{font-size:12px;height:33px;line-height:33px;margin:13px 0 11px}
-.user_info h4 img{margin-left:5px}
+.user_info .bg{background-color:#e6e6e6;position:relative}
+.user_info h4{font-size:14px;margin:3px 0 0;overflow:hidden;padding-left:4px}
+.user_avatar{padding:13px 0 0 16px}
+.user_avatar div{width:111px}
+.user_avatar div img{margin-top:5px}
+.user_info .relation{clear:both;float:left;padding:10px 8px;width:164px}
+.user_info .relation span{border-left:solid 1px #b8b8b8;color:#323232;float:left;font-weight:bold;text-align:center;width:80px}
+.user_info .relation span.f{border:0}
+.user_info .relation span i{color:#000;display:block;font:30px Verdana,Geneva,Arial,Helvetica,sans-serif}
+.user_info .exit{background:url(../images/members/exit.gif) no-repeat;font-size:0;height:10px;position:absolute;right:5px;top:5px;width:35px}
+
 .user_bio p{color:#787878;margin-top:20px}
 .user_bio label{color:#323232;display:block;font-weight:bold;margin-bottom:2px}
 
