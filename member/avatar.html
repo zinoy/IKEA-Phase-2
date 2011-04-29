@@ -10,7 +10,6 @@
   <meta name="copyright" content="Wunderman" />
   <title>IKEA 梦想家 | 编辑个人信息</title>
   <link href="../assets/cssfiles/common.css" rel="stylesheet" type="text/css" />
-  <link href="../assets/cssfiles/jquery.Jcrop.css" rel="stylesheet" type="text/css" />
   <!--[if lte IE 6]>
 	<link rel="stylesheet" type="text/css" href="../assets/cssfiles/lte_ie6.css" />
 	<script type="text/javascript">
@@ -21,7 +20,7 @@
 <body class="member">
   <div id="container">
   	<div id="head" role="banner">
-      <h1 id="siteLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h1>
+      <h1 id="siteLogo"><a href="../index.html" title="宜家社区" target="_blank"></a><span class="beta"></span></h1>
 	  <div id="mainNav">
 	  	<div class="lfloat">
 	  	  <ul id="pageNav" role="navigation">
@@ -41,143 +40,161 @@
           	</div>
           </form>
 		</div>
+		<div class="rfloat cfloat userBar">[用户名], 欢迎回来
+		  <a href="index.html" class="icon">个人中心</a>
+		  <a href="#logout" class="icon">退出</a>
+        </div>
 	  </div>
   	</div>
-	<div id="content">
-	  <div id="userBar">
-		<dl>
-		  <dd class="lside"><a href="#" class="gbtn"><span>个人中心</span></a></dd>
-		  <dd><a href="logout" class="gbtn"><span>注销退出</span></a></dd>
-		</dl>
-	  	<span>IKEA用户，欢迎回到梦想家！</span>
-	  </div>
+    <div id="splitBar"></div>
+	<div id="content" class="s panel">
       <div id="contCol" class="lfloat">
-      	<dl class="subnav">
-      	  <dd><a href="index.html" class="home">我的主页</a></dd>
-		  <dd class="on"><a href="account.html" class="edit">编辑个人信息</a></dd>
-      	</dl>
-		<div class="bLine">
-		  <span></span>
-		</div>
-		<div class="user_edit">
-		  <ul class="subTab">
-		  	<li class="first"><a href="account.html">帐户中心</a></li>
-		  	<li><a href="password.html">修改密码</a></li>
-		  	<li class="on"><a href="avatar.html">修改头像</a></li>
-		  	<li><a href="profile.html">个人信息</a></li>
-		  </ul>
-		  <p class="t2"><span class="arrow"></span></p>
-		  <div class="tabBox avatar" id="step1">
-		  	<form action="" method="post" class="lfloat">
-		  	  <div>
-		  	  	<img src="../assets/images/users/user_sample.jpg" alt="当前头像" height="130" width="130" />
-				<input type="hidden" name="avatarid" />
-			  </div>
-			  <p style="display:none"><button class="gbtn ok" type="submit"><span>确认</span></button></p>
-		  	</form>
-			<div class="options">
-			  <p>方式一：请选择宜家为您准备的图片</p>
-			  <div class="sub">
-				<div>
-				  <ul>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/default.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar2.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar3.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar4.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar5.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar6.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar7.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar8.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar9.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar10.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar11.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar12.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar13.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  	<li>
-				  	  <a href="#"><img src="../assets/images/members/avatars/avatar14.jpg" alt="系统头像" height="64" width="64" /></a>
-				  	</li>
-				  </ul>
-				</div>				
-			  	<span class="prev"><a href="javascript:;"></a></span>
-			  	<span class="next"><a href="javascript:;"></a></span>
-			  </div>
-			  <p>方式二：上传你的个性图片</p>
-              <div class="upload"><span></span><div id="upload_placeholder"></div></div>
-			  <p class="summary">* 仅支持 jpg、gif、png 格式的图片，且文件大小不能超过2MB</p>
-			</div>
+        <div id="leftCol" class="lfloat">
+		  <div class="box user_info">
+            <div class="user_avatar">
+          	  <img src="../assets/images/temp/head_180.jpg" height="180" width="178" alt="用户名称" />
+			  <h4>用户名<img src="../assets/images/members/card.gif" height="26" width="37" alt="IKEA Family会员卡" /></h4>
+            </div>
+		    <p class="relation">
+		      <span class="f"><i>62</i>我关注</span>
+			  <span><i>35</i>关注我</span>
+			  <span class="lie6"><i>26</i>话题</span>
+		    </p>
+		    <div class="user_bio">
+		  	  <p><label>加入时间：</label>2011-02-19</p>
+			  <p><label>商场：</label>上海徐汇</p>
+			  <p><label>个人描述：</label>我是美女！</p>
+			  <p><label>标签：</label></p>
+			  <dl class="tags">
+                <dd><a href="#">标签1</a></dd>
+                <dd><a href="#">标签2</a></dd>
+                <dd><a href="#">标签3</a></dd>
+              </dl>
+		    </div>
+		    <ul class="user_nav">
+		  	  <li><a href="#" class="editAvatar" title="修改头像"><span class="hidden_elem">修改头像</span></a></li>
+		  	  <li><a href="#" class="editProfile" title="修改资料"><span class="hidden_elem">修改资料</span></a></li>
+		  	  <li><a href="#" class="bindCard" title="绑定会员卡"><span class="hidden_elem">绑定会员卡</span></a></li>
+		    </ul>
 		  </div>
-		  <div class="tabBox avatar" id="step2" style="display:none">
-		  	<div class="line">
-		  	  <form action="" method="post">
-		  	  	<div class="line"><p class="summary">* 请移动选择框以剪裁合适的大小</p></div>
-		  	  	<div class="line"><img src="../assets/images/users/user_sample.jpg" alt="新头像" id="cropbox" /></div>
-				<input type="hidden" name="photoAP" id="photoAP" />
-				<input type="hidden" name="x" id="x" />
-				<input type="hidden" name="y" id="y" />
-				<input type="hidden" name="w" id="w" />
-				<input type="hidden" name="h" id="h" />
-				<p><button class="gbtn ok" type="submit"><span>确认</span></button></p>
-		  	  </form>
-			</div>
+		  <div class="box user_activity">
+		  	<h2 class="bar"><span>我的活动</span></h2>
+			<ul class="member_list">
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			  <li><a href="#">想知道你的收纳性格吗？</a></li>
+			</ul>
+            <div class="bLine">
+              <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+              <span></span>
+            </div>
 		  </div>
-		</div>
+		  <div class="box bottom user_group">
+		  	<h2 class="bar"><span>我的群组</span></h2>
+			<ul class="member_list">
+			  <li><a href="#">宜家风格馆</a></li>
+			  <li><a href="#">宜家风格馆</a></li>
+			  <li><a href="#">宜家风格馆</a></li>
+			</ul>
+            <div class="bLine">
+              <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
+              <span></span>
+            </div>
+		  </div>
+        </div>
+        <div id="mainCol" class="rfloat">
+          <div class="box user_edit">
+          	<dl class="usertab">
+          	  <dd><a href="account.html" class="account"><span class="hidden_elem">账户中心</span></a></dd>
+          	  <dd><a href="password.html" class="password"><span class="hidden_elem">修改密码</span></a></dd>
+          	  <dd class="on"><a href="avatar.html" class="avatar"><span class="hidden_elem">修改头像</span></a></dd>
+          	  <dd><a href="profile.html" class="profile"><span class="hidden_elem">个人中心</span></a></dd>
+          	</dl>
+			<br class="floatClear" />
+			<div class="tabpanel">
+			  <div class="tabBox avatar" id="step1">
+			  	<form action="" method="post" class="lfloat">
+			  	  <div>
+			  	  	<img src="../assets/images/temp/avatar_big.jpg" alt="当前头像" height="180" width="178" />
+					<input type="hidden" name="avatarid" />
+				  </div>
+				  <p style="display:none"><button class="gbtn ok" type="submit"><span>确认</span></button></p>
+			  	</form>
+				<div class="options">
+				  <p>方式一：请选择宜家为您准备的图片</p>
+				  <div class="sub">
+					<div>
+					  <ul>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar1.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar2.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar3.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar4.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar5.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar2.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar4.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar1.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  	<li>
+					  	  <a href="#"><img src="../assets/images/temp/avatar3.jpg" alt="系统头像" height="84" width="82" /></a>
+					  	</li>
+					  </ul>
+					</div>				
+				  	<span class="prev"><a href="javascript:;"></a></span>
+				  	<span class="next"><a href="javascript:;"></a></span>
+				  </div>
+				  <p>方式二：上传你的个性图片</p>
+	              <div class="upload"><span></span><div id="upload_placeholder"></div></div>
+				  <p class="summary">* 仅支持 jpg、gif、png 格式的图片，且文件大小不能超过2MB</p>
+				</div>
+			  </div>
+			  <div class="tabBox avatar" id="step2" style="display:none">
+			  	<div class="line">
+			  	  <form action="" method="post">
+			  	  	<div class="line"><p class="summary">* 请移动选择框以剪裁合适的大小</p></div>
+			  	  	<div class="line"><img src="../assets/images/users/user_sample.jpg" alt="新头像" id="cropbox" /></div>
+					<input type="hidden" name="photoAP" id="photoAP" />
+					<input type="hidden" name="x" id="x" />
+					<input type="hidden" name="y" id="y" />
+					<input type="hidden" name="w" id="w" />
+					<input type="hidden" name="h" id="h" />
+					<p><button class="gbtn ok" type="submit"><span>确认</span></button></p>
+			  	  </form>
+				</div>
+			  </div>
+			  <br class="floatClear" />
+			</div>
+          </div>
+        </div>
       </div>
-	  <div id="userCol" class="rfloat">
-	  	<div class="widget user_info">
-	  	  <div class="user_avatar">
-	  	  	<img src="../assets/images/users/user_sample.jpg" alt="用户名" height="130" width="130" />
-	  	  </div>
-		  <h4>用户名</h4>
-		  <div class="user_bio">
-		  	<p><label>加入时间：</label>2011-02-19</p>
-			<p><label>商场：</label>上海徐汇</p>
-			<p><label>个人描述：</label>我是美女！</p>
-		  </div>
-		  <div class="bLine">
-		    <span></span>
-		  </div>
-	  	</div>
-	  </div>
 	</div>
-	<div class="bottomClear"></div>
-	<div id="foot" class="cfloat">
-	  <span class="icon"></span>
-	  <p><span>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="#" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备012345号</a></span><a href="http://www.ikea.com/ms/zh_CN/virtual_catalogue/online_catalogues.html" target="_blank">2011 宜家《家居指南》</a> / <a href="http://www.ikea.com/ms/zh_CN/customer_service/splash.html" target="_blank">客户服务</a> / <a href="http://www.ikea.com/ms/zh_CN/about_ikea/index.html" target="_blank">关于宜家</a> / <a href="http://www.ikea.com/cn/zh/" target="_blank">加入我们</a> / <a href="http://www.ikea.com/ms/zh_CN/ikea_family/index.html" target="_blank">IKEA FAMILY 宜家俱乐部</a></p>
-	</div>
+  	<br class="floatClear" />
+  </div>
+  <div id="foot" class="cfloat">
+  	<h2 id="ikeaLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h2>
+  	<p>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="terms_policy.html" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备09045065号</a></p>
   </div>
   <script type="text/javascript" src="../assets/scripts/jquery.js"></script>
+  <script type="text/javascript" src="../assets/scripts/jquery.cookie.js"></script>
   <script type="text/javascript" src="../assets/scripts/jquery.pngFix.js"></script>
   <script type="text/javascript" src="../assets/scripts/jquery.Jcrop.js"></script>
   <script type="text/javascript" src="../assets/scripts/swfobject.js"></script>
   <script type="text/javascript" src="../assets/scripts/swfupload.js"></script>
   <script type="text/javascript" src="../assets/scripts/swfupload.cookies.js"></script>
   <script type="text/javascript" src="../assets/scripts/general.js"></script>
-  
 </body>
 </html>

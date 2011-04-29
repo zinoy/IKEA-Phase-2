@@ -13,7 +13,7 @@ $.fn.serializeObject = function(){
     });
     return o;
 };
-
+path_root = '/git/IKEA-Phase-2/';
 $(document).ready(function(){
     if ($('.scroll-pane').length > 0) {
         $('.scroll-pane').jScrollPane({
@@ -23,8 +23,8 @@ $(document).ready(function(){
         });
         $(document).pngFix();
     }
-    $('.room_type li a').mouseover(swapImg);
-    $('.room_type li a').mouseout(swapImg);
+    //$('.room_type li a').mouseover(swapImg);
+    //$('.room_type li a').mouseout(swapImg);
     $('#userSignin').submit(function(){
         var values = $('#userSignin').serializeObject();
         $.post(path_root + 'ajaxLogin.action', $('#userSignin').serialize(), function(data){
@@ -172,6 +172,20 @@ function swapImg(evt){
     obj.attr('src', src);
 }
 
+function homeAccordion(){
+    var act = function(){
+        if ($(this).hasClass('on')) {
+            return false;
+        }
+        $('.hfcenter .acc').slideUp('normal');
+        $('.hfcenter a').removeClass('on');
+        $(this).addClass('on').next('.acc').slideDown('normal');
+        return false;
+    }
+    $('.hfcenter .rooms').click(act);
+    $('.hfcenter .hot').click(act);
+}
+
 function hfCenter(){
     if ($('.slideshow').length > 0) {
         var interval = 5000;
@@ -296,7 +310,7 @@ function subSlider(){
     if ($('.topic').length > 0) {
         liMargin = 2;
     } else if ($('.member').length > 0) {
-        liMargin = 6;
+        liMargin = 5;
     } else {
         liMargin = 7;
     }
@@ -508,25 +522,25 @@ function uploadSuccess(file, data, response){
     $('#step2').show();
     var h = json.picH;
     var w = json.picW;
-    var init;
+    var initH,initW;
     if (h < w) {
-        if (h < 130) {
-            init = h;
+        if (h < 180) {
+            initH = h;
         } else {
-            init = 130;
+            initH = 180;
         }
     } else {
-        if (w < 130) {
-            init = w;
+        if (w < 178) {
+            initW = w;
         } else {
-            init = 130;
+            initW = 180;
         }
     }
     
     $('#cropbox').attr('src', json.compressUrl).Jcrop({
-        minSize: [init, init],
-        setSelect: [0, 0, init, init],
-        aspectRatio: 1,
+        minSize: [initW, initW],
+        setSelect: [0, 0, initW, initW],
+        aspectRatio: .99,
         onChange: showCoords,
         onSelect: showCoords
     });
