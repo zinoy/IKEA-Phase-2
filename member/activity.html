@@ -8,7 +8,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="copyright" content="Wunderman" />
-  <title>IKEA 梦想家 | 编辑个人信息</title>
+  <title>IKEA 梦想家 | 我的活动</title>
   <link href="../assets/cssfiles/common.css" rel="stylesheet" type="text/css" />
   <!--[if lte IE 6]>
 	<link rel="stylesheet" type="text/css" href="../assets/cssfiles/lte_ie6.css" />
@@ -50,6 +50,7 @@
 	<div class="breadcrumbs">
 	  <a href="#">宜家社区</a>
 	  <a class="icon" href="#">个人中心</a>
+	  <a class="icon" href="#">我的活动</a>
 	</div>
 	<div id="content" class="s panel">
       <div id="contCol" class="lfloat">
@@ -107,83 +108,38 @@
 		  </div>
         </div>
         <div id="mainCol" class="rfloat">
-          <div class="box user_edit">
-          	<dl class="usertab">
-          	  <dd><a href="account.html" class="account"><span class="hidden_elem">账户中心</span></a></dd>
-          	  <dd><a href="password.html" class="password"><span class="hidden_elem">修改密码</span></a></dd>
-          	  <dd class="on"><a href="avatar.html" class="avatar"><span class="hidden_elem">修改头像</span></a></dd>
-          	  <dd><a href="profile.html" class="profile"><span class="hidden_elem">个人中心</span></a></dd>
-          	</dl>
-			<br class="floatClear" />
-			<div class="tabpanel">
-			  <div class="tabBox avatar" id="step1">
-			  	<form action="" method="post" class="lfloat">
-			  	  <div>
-			  	  	<img src="../assets/images/temp/avatar_big.jpg" alt="当前头像" height="180" width="178" />
-					<input type="hidden" name="avatarid" />
-				  </div>
-				  <p style="display:none"><button class="gbtn ok" type="submit"><span>确认</span></button></p>
-			  	</form>
-				<div class="options">
-				  <p>方式一：请选择宜家为您准备的图片</p>
-				  <div class="sub">
-					<div>
-					  <ul>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar1.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar2.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar3.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar4.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar5.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar2.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar4.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar1.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  	<li>
-					  	  <a href="#"><img src="../assets/images/temp/avatar3.jpg" alt="系统头像" height="84" width="82" /></a>
-					  	</li>
-					  </ul>
-					</div>				
-				  	<span class="prev"><a href="javascript:;"></a></span>
-				  	<span class="next"><a href="javascript:;"></a></span>
-				  </div>
-				  <p>方式二：上传你的个性图片</p>
-	              <div class="upload"><span></span><div id="upload_placeholder"></div></div>
-				  <p class="summary">* 仅支持 jpg、gif、png 格式的图片，且文件大小不能超过2MB</p>
+		  <div class="box bottom my_activity">
+		  	<h2 class="bar"><span>我的活动</span></h2>
+  			<ul class="event_list">
+  			  <li class="f">
+  	  	        <a href="#"><img src="../assets/images/temp/event1.jpg" height="49" width="74" alt="想知道你的收纳性格吗？" class="lfloat" /></a>
+				<div class="rfloat">
+  				  <a href="#" class="title">想知道你的收纳性格吗？</a>
+  			  	  <dl class="iconList">
+  			  	    <dd class="icon_like">256 人喜欢</dd>
+  			      </dl>
 				</div>
-				<br class="floatClear" />
-			  </div>
-			  <div class="tabBox avatar" id="step2" style="display:none">
-			  	<div class="line">
-			  	  <form action="" method="post">
-			  	  	<div class="line"><p class="summary">* 请移动选择框以剪裁合适的大小</p></div>
-			  	  	<div class="line"><img src="../assets/images/users/user_sample.jpg" alt="新头像" id="cropbox" /></div>
-					<input type="hidden" name="photoAP" id="photoAP" />
-					<input type="hidden" name="x" id="x" />
-					<input type="hidden" name="y" id="y" />
-					<input type="hidden" name="w" id="w" />
-					<input type="hidden" name="h" id="h" />
-					<p><button class="gbtn ok" type="submit"><span>确认</span></button></p>
-			  	  </form>
+  			  </li>
+  			  <li>
+  	  	        <a href="#"><img src="../assets/images/temp/event2.jpg" height="49" width="74" alt="“地球一小时”，超越那一小时" class="lfloat" /></a>
+				<div class="rfloat">
+  				  <a href="#" class="title">"地球一小时"，超越那一小时</a>
+  			  	  <dl class="iconList">
+  			  	    <dd class="icon_like">256 人喜欢</dd>
+  			      </dl>
 				</div>
-			  </div>
-			  <br class="floatClear" />
-			</div>
-          </div>
+  			  </li>
+  			  <li>
+  	  	        <a href="#"><img src="../assets/images/temp/event3.jpg" height="49" width="74" alt="定制个性化门厅" class="lfloat" /></a>
+				<div class="rfloat">
+  				  <a href="#" class="title">定制个性化门厅</a>
+  			  	  <dl class="iconList">
+  			  	    <dd class="icon_like">256 人喜欢</dd>
+  			      </dl>
+				</div>
+  			  </li>
+  			</ul>
+		  </div>
         </div>
       </div>
 	</div>
@@ -196,10 +152,7 @@
   <script type="text/javascript" src="../assets/scripts/jquery.js"></script>
   <script type="text/javascript" src="../assets/scripts/jquery.cookie.js"></script>
   <script type="text/javascript" src="../assets/scripts/jquery.pngFix.js"></script>
-  <script type="text/javascript" src="../assets/scripts/jquery.Jcrop.js"></script>
   <script type="text/javascript" src="../assets/scripts/swfobject.js"></script>
-  <script type="text/javascript" src="../assets/scripts/swfupload.js"></script>
-  <script type="text/javascript" src="../assets/scripts/swfupload.cookies.js"></script>
   <script type="text/javascript" src="../assets/scripts/general.js"></script>
 </body>
 </html>

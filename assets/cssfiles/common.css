@@ -71,9 +71,11 @@ a:focus{outline:none}
 #head{float:left;height:61px;overflow:hidden;padding-top:24px;width:940px}
 
 .extlink{font-size:10px;height:20px;margin:0 auto;padding-right:3px;text-align:right;width:997px}
-.extlink a{color:#a1a098;height:20px;line-height:20px;text-decoration:none}
-.extlink a:hover{text-decoration:underline}
-.extlink .icon{background:url(../images/icons.gif) no-repeat left -511px;margin-left:15px;padding-left:8px}
+.extlink a,.breadcrumbs a{color:#a1a098;height:20px;line-height:20px;text-decoration:none}
+.extlink a:hover,.breadcrumbs a:hover{text-decoration:underline}
+.extlink .icon,.breadcrumbs .icon{background:url(../images/icons.gif) no-repeat left -511px;margin-left:15px;padding-left:8px}
+.breadcrumbs{border-top:solid 5px #ecebdf;clear:both;font-size:10px;padding:8px 30px}
+.breadcrumbs .icon{margin-left:4px}
 
 /*****header start*****/
 #siteLogo{background:url(../images/logo.gif) no-repeat;float:left;margin:3px 0 0;position:relative;width:115px}
@@ -120,9 +122,10 @@ a:focus{outline:none}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
 
 h2{margin:0 0 15px}
-h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px}
+h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
 h2.bar span{background:url(../images/h2Txt.gif) no-repeat;display:block;height:20px;text-indent:-9999px}
 h2.bar span.dynamic{background:none !important;color:#000;font:bold 12px/20px "微软雅黑";text-indent:0}
+h2.bar i{font: bold 10px/20px Verdana,Geneva,Arial,Helvetica,sans-serif;position:absolute;top:-1px}
 .center h2.bar span,.event h2.bar span,.media h2.bar span,.search h2.bar span{background-image:url(../images/h2TxtC.gif)}
 
 h4.title,h4.title a{color:#323232;font-size:12px;margin:0;text-decoration:none}
@@ -202,6 +205,8 @@ h4.title a:hover{text-decoration:underline}
 .hot_list li .title,.event_list li .title{color:#323232;text-decoration:none}
 .hot_list li .title:hover,.event_list li .title:hover{text-decoration:underline}
 .hot_list li dl,.event_list li dl{margin:5px 0 0}
+.my_activity .event_list li{width:712px}
+.my_activity .event_list li div{width:632px}
 
 .acc .bLine{padding-top:19px}
 
@@ -235,14 +240,14 @@ h4.title a:hover{text-decoration:underline}
 .discussion .bLine{padding-top:5px}
 
 .rate_room h2 span{background-position:left -160px}
-.rate_room li,.user_photos li{float:left;margin-left:18px;width:141px}
-.rate_room li.f,.user_photos li.f{margin-left:0}
-.rate_room li .title,.user_photos li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
-.rate_room li .title:hover,.user_photos li .title:hover{text-decoration:underline}
-.rate_room li .vote,.user_photos li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
-.rate_room li .vote span,.user_photos li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
-.rate_room li .vote b,.user_photos li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
-.rate_room li .vote i,.user_photos li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
+.rate_room li{float:left;margin-left:18px;width:141px}
+.rate_room li.f{margin-left:0}
+.rate_room li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
+.rate_room li .title:hover{text-decoration:underline}
+.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
+.rate_room li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
+.rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
+.rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
 
 /*****widget*****/
 .slidebar_holder{font-size:0;position:relative}
@@ -274,13 +279,13 @@ h4.title a:hover{text-decoration:underline}
 .home .poll .bar span{background-position:left -60px}
 
 .activity_users .bar span{background-position:left -120px}
-.activity_users li,.user_follow li,.user_followed li,.user_maybe li{float:left;margin-bottom:10px;margin-left:17px;position:relative}
-.activity_users li.lside,.user_follow li.lside,.user_followed li.lside,.user_maybe li.lside{margin-left:0}
-.activity_users img,.user_follow img,.user_followed img,.user_maybe img{display:block;margin-bottom:3px}
-.activity_users a,.user_follow a,.user_followed a,.user_maybe a{color:#323232;text-decoration:none}
-.activity_users .card,.user_follow .card,.user_followed .card,.user_maybe .card{left:-6px;position:absolute;top:52px}
-.activity_users p,.user_follow p,.user_followed p,.user_maybe p{cursor:pointer;font-size:10px;height:25px;line-height:12px;overflow:hidden;padding-left:15px;width:33px}
-.activity_users .bLine,.user_follow .bLine,.user_followed .bLine,.user_maybe .bLine{padding-top:6px}
+.activity_users li,.user_list li{float:left;margin-bottom:10px;margin-left:17px;position:relative}
+.activity_users li.lside,.user_list li.lside{margin-left:0}
+.activity_users img,.user_list img{display:block;margin-bottom:3px}
+.activity_users a,.user_list a{color:#323232;text-decoration:none}
+.activity_users .card,.user_list .card{left:-6px;position:absolute;top:52px}
+.activity_users p,.user_list p{cursor:pointer;font-size:10px;height:25px;line-height:12px;overflow:hidden;padding-left:15px;width:33px}
+.activity_users .bLine,.user_list .bLine{padding-top:6px}
 
 .poll p{color:#787878;margin-bottom:10px}
 .poll dl{float:left;margin-bottom:15px}
@@ -445,16 +450,16 @@ h4.title a:hover{text-decoration:underline}
 
 .user_info .user_avatar h4{font-size:14px;margin:3px 0 10px}
 .user_info .relation{border-bottom:solid 1px #e6e6e6;border-top:solid 1px #e6e6e6;clear:both;float:left;padding:4px 0;width:178px}
-.user_info .relation span{border-left:solid 1px #e6e6e6;color:#323232;display:inline;float:left;font-weight:bold;text-align:center;width:58px}
-.user_info .relation span.f{border:0}
-.user_info .relation span i{color:#000;display:block;font:20px Verdana,Geneva,Arial,Helvetica,sans-serif}
+.user_info .relation a,.user_info .relation span{border-left:solid 1px #e6e6e6;color:#323232;display:inline;float:left;font-weight:bold;text-align:center;text-decoration:none;width:58px}
+.user_info .relation a.f,.user_info .relation span.f{border:0}
+.user_info .relation a i,.user_info .relation span i{color:#000;display:block;font:20px Verdana,Geneva,Arial,Helvetica,sans-serif}
 .user_info .exit{background:url(../images/members/exit.gif) no-repeat;font-size:0;height:10px;position:absolute;right:5px;top:5px;width:35px}
 
-.user_bio{clear:left;float:left;margin-bottom:20px;padding-top:10px;width:178px}
+.user_bio{border-bottom:solid 1px #e6e6e6;clear:left;float:left;margin-bottom:15px;padding-bottom:20px;padding-top:10px;width:178px}
 .user_bio p{color:#323232;margin-top:5px}
 .user_bio label{font-weight:bold;margin-bottom:2px}
 
-.user_nav{border-bottom:solid 1px #e6e6e6;border-top:solid 1px #e6e6e6;clear:left;padding:15px 0 9px}
+.user_nav{border-bottom:solid 1px #e6e6e6;clear:left;padding:0 0 9px}
 .user_nav li{margin-bottom:6px}
 .user_nav a{background:url(../images/members/userNav.gif) no-repeat;display:block;height:17px;width:96px}
 .user_nav .editAvatar{background-position:left top}
@@ -492,10 +497,10 @@ h4.title a:hover{text-decoration:underline}
 .subarr.t3 .arrow{left:421px}
 
 .user_activity h2,.user_group h2{margin:0}
-.user_activity h2 span{background-position:left -40px}
+.user_activity h2 span,.my_activity h2 span{background-position:left -40px}
 .user_group h2 span{background-position:left -80px}
 
-.user_edit .tabBox div{clear:left;float:left;margin-bottom:10px}
+.user_edit .tabBox div{clear:left;float:left;margin-bottom:10px;width:678px}
 .user_edit .tabBox div div{clear:none;float:none}
 .user_edit .tabBox div .work{font-family:Verdana,Geneva,Arial,Helvetica,sans-serif}
 .user_edit .tabBox div.upDashed{border-top:dashed 1px #cacaca;padding-top:10px;width:710px}
@@ -563,6 +568,9 @@ h4.title a:hover{text-decoration:underline}
 .usertab .on .password{background-position:-612px -23px}
 .usertab .on .avatar{background-position:-696px -23px}
 .usertab .on .profile{background-position:-780px -23px}
+.usertab .on .stateHim{background-position:-864px -23px;width:83px}
+.usertab .on .topicHim{background-position:-947px -23px;width:83px}
+
 
 .tabpanel{background-color:#faf9f4;border:solid 2px #e3e0d4;padding:15px}
 .tabpanel .member_list li{height:auto;line-height:18px;text-indent:0}
@@ -576,10 +584,25 @@ h4.title a:hover{text-decoration:underline}
 .tabpanel .member_list li strong a{text-decoration:none}
 .tabpanel .member_list li strong a:hover{text-decoration:underline}
 
+.my_follow h2 i,.my_followed h2 i{left:40px}
+.my_follow li,.my_followed li{border-bottom:solid 1px #e6e6e6;float:left;margin-bottom:10px;padding-bottom:10px;width:712px}
+.my_follow li div,.my_followed li div{float:left;margin-left:10px;width:650px}
+.my_follow li a,.my_follow li p span,.my_followed li a,.my_followed li p span{color:#323232;text-decoration:none}
+.my_follow li a:hover,.my_follow li p a,.my_followed li a:hover,.my_followed li p a{text-decoration:underline;}
+.my_follow li p,.my_followed li p{background:url("../images/members/member_listicon.gif") no-repeat left 5px;color:#787878;margin:8px 0 0 10px;padding-left:11px}
+.my_follow li p i,.my_followed li p i{float:right;font-size:10px;font-style:normal}
+
 .user_photos h2 span{background-position:left -100px}
 .user_follow h2 span{background-position:left top}
 .user_followed h2 span{background-position:left -20px}
 .user_maybe h2 span{background-position:left -60px}
+.his_activity h2 span{background-position:left -120px}
+.his_group h2 span{background-position:left -140px}
+.his_photos h2 span{background-position:left -160px}
+.his_follow h2 span{background-position:left -180px}
+.his_followed h2 span{background-position:left -200px}
+.my_follow h2 span{background-position:left -220px}
+.my_followed h2 span{background-position:left -240px}
 
 /*****event*****/
 .event_news .bar span{background-position:left -140px}
