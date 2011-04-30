@@ -83,7 +83,7 @@ a:focus{outline:none}
 #siteLogo a{display:block;height:37px}
 #mainNav{margin-left:250px}
 #pageNav{margin-top:8px}
-#pageNav li{border-left:solid 1px #323232;float:left;padding:1px 15px;width:68px}
+#pageNav li{border-left:solid 1px #323232;float:left;height:16px;padding:1px 15px;position:relative;width:68px}
 #pageNav li.navHome{border:0;padding-left:0;width:20px}
 #pageNav li a{background:url(../images/pageNav.gif) no-repeat left -1px;display:block;height:16px}
 #pageNav li.navCenter a{background-position:left -19px}
@@ -95,7 +95,7 @@ a:focus{outline:none}
 #pageNav li.navEvents a.on,#pageNav li.navEvents a:hover{background-position:left -91px}
 #pageNav li.navMedia a.on,#pageNav li.navMedia a:hover{background-position:left -109px}
 #pageNav li.navSquare a.on,#pageNav li.navSquare a:hover{background-position:left -145px}
-#pageNav li i{background:url(../images/icons.gif) no-repeat center -529px;display:inline-block;font-size:0;height:7px;margin-top:29px;width:100%}
+#pageNav li i{background:url(../images/icons.gif) no-repeat center -529px;font-size:0;height:7px;margin-top:29px;position:absolute}
 
 .userBar{clear:both;font-size:10px;text-align:right;width:360px}
 .userBar dd,.userBar dt{float:right;}
@@ -120,6 +120,7 @@ a:focus{outline:none}
 #content{background:url(../images/bgline.gif) repeat-y;clear:both;float:left;width:940px}
 .member #content{background-image:url(../images/bgline_m.gif)}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
+.square #content{background-image:url(../images/bgline_q.gif)}
 
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
@@ -155,6 +156,7 @@ h4.title a:hover{text-decoration:underline}
 .icon_like{background-position:left -25px !important}
 .icon_comt{background-position:left -45px !important}
 .icon_time{background-position:left -374px !important}
+.icon_view{background-position:left -334px !important}
 .rank1{background-position:left -65px !important}
 .rank2{background-position:left -85px !important}
 .rank3{background-position:left -105px !important}
@@ -241,13 +243,14 @@ h4.title a:hover{text-decoration:underline}
 
 .rate_room h2 span{background-position:left -160px}
 .rate_room li{float:left;margin-left:18px;width:141px}
-.rate_room li.f{margin-left:0}
+.rate_room li.f{margin-left:0 !important}
 .rate_room li .title{color:#323232;display:block;font-weight:bold;margin:6px 0;overflow:hidden;text-decoration:none}
 .rate_room li .title:hover{text-decoration:underline}
-.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px}
+.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px;width:100%}
 .rate_room li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
 .rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
 .rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
+.square .rate_room li{margin-left:24px;width:160px}
 
 /*****widget*****/
 .slidebar_holder{font-size:0;position:relative}
@@ -305,9 +308,9 @@ h4.title a:hover{text-decoration:underline}
 .hot_tags .s5{color:#999;font-size:14px}
 .hot_tags .s6{color:#999;font-size:12px}
 
-.logined .bg{background-color:#e6e6e6;position:relative}
+.logined .bg{background-color:#e6e6e6}
 .logined h4{font-size:14px;margin:3px 0 0;overflow:hidden;padding-left:4px}
-.logined .user_avatar{padding:13px 0 0 16px}
+.logined .user_avatar{padding:13px 0 0 16px;position:relative;width:164px}
 .logined .user_avatar div{width:111px}
 .logined .user_avatar div img{margin-top:5px}
 .logined .exit{background:url(../images/members/exit.gif) no-repeat;font-size:0;height:10px;position:absolute;right:5px;top:5px;width:35px}
@@ -672,3 +675,33 @@ body.frame{background:none}
 
 /*****search*****/
 .search_result .bar span{background-position:left -160px}
+
+/*****square*****/
+.sp_groups h2 span{background-position:left -180px}
+.sp_hot h2 span{background-position:left -200px}
+.sp_activity h2 span{background-position:left -220px}
+
+.group_list{}
+.group_list li{float:left;width:340px}
+.group_list li.vline{border-right:solid 1px #e6e6e6;height:90px;margin-right:15px;width:14px}
+.group_list li.hline{border-bottom:solid 1px #e6e6e6;height:13px;margin-bottom:14px}
+.group_list li.space{height:28px;width:30px}
+.group_list li div{border:solid 1px #ffbe0a;float:right;height:86px;margin-left:2px;padding:1px;width:184px}
+.group_list li div h3{background-color:#ffbe0a;font-size:12px;height:27px;line-height:27px;margin:0;padding:0 0 0 5px}
+.group_list li div p{color:#6e6d6c;margin-top:5px;padding-left:5px}
+.group_list li div .join{float:right;margin-right:12px;margin-top:9px}
+.group_list li .iconList{margin-left:7px}
+
+.sp_hot li{border-bottom:solid 1px #e6e6e6;padding:10px 0}
+.sp_hot li.t{border-top:solid 1px #e6e6e6}
+.sp_hot li a{color:#323232;text-decoration:none}
+.sp_hot li a:hover{text-decoration:underline}
+.sp_hot .iconList{margin:5px 0 0}
+
+.sp_activity li{border-bottom:solid 1px #e6e6e6;padding-bottom:15px}
+.sp_activity li div{float:right;margin-left:12px;width:120px}
+.sp_activity li p{margin-bottom:5px}
+.sp_activity li p a{color:#323232;text-decoration:none}
+.sp_activity li p a:hover{text-decoration:underline}
+.sp_activity li p span{margin-left:.7em}
+.sp_activity li strong{color:#787878;font-weight:normal}

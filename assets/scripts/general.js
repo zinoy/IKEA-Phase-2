@@ -110,6 +110,10 @@ $(document).ready(function(){
         });
         return false;
     });
+    if($('#pageNav a.on').length>0){
+        $('#pageNav a.on').parent('li').append('<i></i>');
+        $('#pageNav i').width($('#pageNav a.on').parent('li').width());
+    }
     $('#navSearch input').focus(function(){
         if ($(this).val() == '请输入关键词') {
             $(this).val('');
