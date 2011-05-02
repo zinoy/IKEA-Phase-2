@@ -479,6 +479,12 @@ h4.title a:hover{text-decoration:underline}
 .pager .prev{background:url(../images/icons.gif) no-repeat left -234px;display:block;height:15px;margin:0;padding:0;width:15px}
 .pager .next{background:url(../images/icons.gif) no-repeat right -234px;display:block;height:15px;margin:0;padding:0;width:15px}
 .pager .mid{margin:0 15px}
+.pager.nav .prev{display:inline-block;margin-right:7px}
+.pager.nav .next{display:inline-block;margin-left:7px}
+.pager.nav a,.pager.nav span{line-height:14px}
+.pager form,.pager input{display:inline-block}
+.pager form .num{font:10px Verdana;height:13px;padding:1px;width:34px}
+.pager form .go{vertical-align:-4px}
 
 .subTab{float:left;font-size:14px;margin:30px 0 0}
 .subTab li{background:url(../images/members/split_line.gif) no-repeat left 6px;float:left;margin-right:10px;padding-left:10px}
@@ -705,3 +711,27 @@ body.frame{background:none}
 .sp_activity li p a:hover{text-decoration:underline}
 .sp_activity li p span{margin-left:.7em}
 .sp_activity li strong{color:#787878;font-weight:normal}
+
+h1.sub{font-size:20px;margin-top:0}
+.intro div{float:right;width:473px}
+.intro .info a{color:#323232;text-decoration:none}
+.intro .info a:hover{text-decoration:underline}
+.intro .announce{background-color:#faf9f4;border:solid 2px #e3e0d4;margin:10px 0;padding:10px}
+.ctrlBar{clear:both;float:left;margin-bottom:20px;padding-top:15px;width:712px}
+.ctrlBar .rfloat{margin-left:8px}
+.sp_groups table{width:712px}
+.sp_groups th{background-color:#ecebdf;border-bottom:solid 1px #e3e0d4;height:35px;text-align:left}
+.sp_groups table .t{padding-left:15px;width:418px}
+.sp_groups table .a{width:68px}
+.sp_groups table .b{width:60px}
+.sp_groups table .r{width:60px}
+.sp_groups table .l{width:78px}
+.sp_groups td{border-bottom:solid 1px #e3e0d4;height:30px}
+.sp_groups .alt td{background-color:#f5f5ef}
+.sp_groups td.top{background-image:url(../images/icons.gif);background-repeat:no-repeat;background-position:15px -536px;padding-left:50px}
+.sp_groups td a{color:#323232;text-decoration:none}
+.sp_groups td a:hover{text-decoration:underline}
+.sp_groups td span{color:#ffbe0a;margin-right:3px}
+.sp_groups .btBar{padding-top:10px}
+
+.gp_activity h2 span{background-position:left -240px}
