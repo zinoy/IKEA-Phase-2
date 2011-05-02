@@ -690,6 +690,7 @@ body.frame{background:none}
 .sp_discussion h2 span{background-position:left -260px}
 .sp_grouphot h2 span{background-position:left -280px}
 .sp_allhot h2 span{background-position:left -300px}
+.sp_new h2 span{background-position:left -320px}
 
 .group_list{}
 .group_list li{float:left;width:340px}
@@ -764,15 +765,22 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_discussion .topic{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px;position:relative;width:712px}
 
 .sp_reply h2{font-size:12px;margin-bottom:10px}
-.sp_reply .toolbar{float:left;margin-bottom:7px}
-.sp_reply .toolbar dd{float:left;margin-right:10px}
-.sp_reply .toolbar a{background:url(../images/square/reply_icon.gif) no-repeat;display:block;height:15px}
-.sp_reply .toolbar .pic a{width:60px}
-.sp_reply .toolbar .video a{background-position:left -15px;width:66px}
-.sp_reply .toolbar .link a{background-position:left -30px;width:49px}
-.sp_reply .toolbar .unlink a{background-position:left -45px;width:67px}
-.sp_reply .textbox{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:solid 2px #d8d8d8;clear:left;margin-bottom:6px;padding:2px;position:relative}
-.sp_reply .textbox textarea{border:0;font-size:12px;resize:none;width:100%}
-.sp_reply .textbox i{background:url(../images/square/tbarr.gif) no-repeat;font-size:0;height:6px;left:20px;position:absolute;top:-6px;width:7px}
-.sp_reply .upload{margin-bottom:10px}
-.sp_reply .desc{color:#7f7f7f}
+.sp_form .toolbar{float:left;margin-bottom:7px}
+.sp_form .toolbar dd{float:left;margin-right:10px}
+.sp_form .toolbar a{background:url(../images/square/reply_icon.gif) no-repeat;display:block;height:15px}
+.sp_form .toolbar .pic a{width:60px}
+.sp_form .toolbar .video a{background-position:left -15px;width:66px}
+.sp_form .toolbar .link a{background-position:left -30px;width:49px}
+.sp_form .toolbar .unlink a{background-position:left -45px;width:67px}
+.sp_form .textbox{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:solid 2px #d8d8d8;clear:left;margin-bottom:6px;padding:2px;position:relative}
+.sp_form .textbox textarea{border:0;font-size:12px;resize:none;width:100%}
+.sp_form .textbox i{background:url(../images/square/tbarr.gif) no-repeat;font-size:0;height:6px;left:20px;position:absolute;top:-6px;width:7px}
+.sp_form .upload{margin-bottom:10px}
+.sp_form .desc{color:#7f7f7f;margin-left:5px}
+.sp_form label{float:left;line-height:20px}
+
+.sp_new .line{clear:left;float:left;margin-bottom:15px}
+.sp_new .longField{font-size:12px;width:476px}
+.sp_form .cblist{float:left;width:650px}
+.sp_form .cblist dd{float:left;margin:0 15px 15px 0}
+.sp_form .cblist label{float:none}
