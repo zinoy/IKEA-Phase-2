@@ -8,7 +8,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="copyright" content="Wunderman" />
-  <title>IKEA 梦想家 | 家居知识</title>
+  <title>宜家社区 | 家居知识</title>
   <link href="assets/cssfiles/common.css" rel="stylesheet" type="text/css" />
   <!--[if lte IE 6]>
 	<link rel="stylesheet" type="text/css" href="assets/cssfiles/lte_ie6.css" />
@@ -18,8 +18,9 @@
   <![endif]-->
 </head>
 <body class="center">
+  <div class="extlink"></div>
   <div id="container">
-  	<div id="head" role="banner">
+  	<div id="head" class="panel" role="banner">
       <h1 id="siteLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h1>
 	  <div id="mainNav">
 	  	<div class="lfloat">
@@ -42,20 +43,14 @@
 		</div>
 	  </div>
   	</div>
-	<div id="content">
-	  <div id="userBar">
-		<dl>
-		  <dd class="lside"><a href="#" class="gbtn"><span>个人中心</span></a></dd>
-		  <dd><a href="logout" class="gbtn"><span>退出帐户</span></a></dd>
-		</dl>
-	  	<span>IKEA用户，欢迎回到梦想家！</span>
-	  </div>
+  	<div id="splitBar"></div>
+	<div id="content" class="panel">
       <div id="contCol" class="lfloat">
       	<div class="innerBox new_topics">
       	  <h2 class="bar"><span>最新家居知识分享</span></h2>
 		  <div class="slideshow">
 		  	<ul>
-		  	  <li><img src="assets/images/center/center_sample.jpg" alt="宜家会员的小时代来临啦！" height="250" width="740" /></li>
+		  	  <li><img src="assets/images/center/center_sample.jpg" alt="宜家会员的小时代来临啦！" height="250" width="710" /></li>
 		  	  <li><img src="assets/images/center/center_sample.jpg" alt="宜家会员的小时代来临啦！" height="250" width="740" /></li>
 		  	  <li><img src="assets/images/center/center_sample.jpg" alt="宜家会员的小时代来临啦！" height="250" width="740" /></li>
 		  	  <li><img src="assets/images/center/center_sample.jpg" alt="宜家会员的小时代来临啦！" height="250" width="740" /></li>
@@ -129,85 +124,53 @@
 		  </div>
       	</div>
 		<div class="innerBox type_list">
-		  <dl class="tab">
-		    <dd><a href="#" class="on"><img src="assets/images/center/type_room_on.gif" alt="按房间类型查看" /></a></dd>
-		    <dd><a href="#" class="disable"><img src="assets/images/center/type_life.gif" alt="按生活状态查看" /></a></dd>
-		    <dd><a href="#" class="disable"><img src="assets/images/center/type_season.gif" alt="按季节性家居查看" /></a></dd>
-		  </dl>
-		  <ul class="list main_type">
-		  	<li>
-		  	  <a href="list.html">
-		  		<img src="assets/images/center/living.jpg" alt="客厅" height="82" width="142" />
-				<p>客厅</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/dining.jpg" alt="餐厅" height="82" width="142" />
-				<p>餐厅</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/kitchen.jpg" alt="厨房" height="82" width="142" />
-				<p>厨房</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/bathroom.jpg" alt="浴室" height="82" width="142" />
-				<p>浴室</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/bedroom.jpg" alt="卧室" height="82" width="142" />
-				<p>卧室</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/soho.jpg" alt="家庭工作室" height="82" width="142" />
-				<p>家庭工作室</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/kids.jpg" alt="儿童房" height="82" width="142" />
-				<p>儿童房</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/teenagers.jpg" alt="青少年房" height="82" width="142" />
-				<p>青少年房</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/balcony.jpg" alt="阳台" height="82" width="142" />
-				<p>阳台</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/storage.jpg" alt="储物间" height="82" width="142" />
-				<p>储物间</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/hall.jpg" alt="门厅" height="82" width="142" />
-				<p>门厅</p>
-		  	  </a>
-			</li>
-		  	<li>
-		  	  <a href="#">
-		  		<img src="assets/images/center/others.jpg" alt="其它" height="82" width="142" />
-				<p>其它</p>
-		  	  </a>
-			</li>
-		  </ul>
+      	  <dl class="usertab">
+		    <dd class="on"><a href="#" class="sortbyRoom"><span class="hidden_elem">按房间类型查看</span></a></dd>
+		    <dd><a href="#" class="sortbyState disable"><span class="hidden_elem">按生活状态查看</span></a></dd>
+		    <dd><a href="#" class="sortbySeason disable"><span class="hidden_elem">按季节性家居查看</span></a></dd>
+      	  </dl>
+		  <br class="floatClear" />
+      <div class="tabpanel">
+        <ul class="list main_type">
+          <li><a href="list.html"><img src="assets/images/center/living.jpg" alt="客厅" height="75" width="130" />
+              <p>客厅</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/dining.jpg" alt="餐厅" height="75" width="130" />
+              <p>餐厅</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/kitchen.jpg" alt="厨房" height="75" width="130" />
+              <p>厨房</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/bathroom.jpg" alt="浴室" height="75" width="130" />
+              <p>浴室</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/bedroom.jpg" alt="卧室" height="75" width="130" />
+              <p>卧室</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/soho.jpg" alt="家庭工作室" height="75" width="130" />
+              <p>家庭工作室</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/kids.jpg" alt="儿童房" height="75" width="130" />
+              <p>儿童房</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/teenagers.jpg" alt="青少年房" height="75" width="130" />
+              <p>青少年房</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/balcony.jpg" alt="阳台" height="75" width="130" />
+              <p>阳台</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/storage.jpg" alt="储物间" height="75" width="130" />
+              <p>储物间</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/hall.jpg" alt="门厅" height="75" width="130" />
+              <p>门厅</p>
+            </a></li>
+          <li><a href="#"><img src="assets/images/center/others.jpg" alt="其它" height="75" width="130" />
+              <p>其它</p>
+            </a></li>
+        </ul>
+        <br class="floatClear" />
+      </div>
 		  <div class="bLine">
 		    <span></span>
 		  </div>
@@ -215,65 +178,66 @@
       </div>
 	  <div id="userCol" class="rfloat">
 	  	<div class="widget hot_topics">
-	  	  <h2 class="bar"><span>最受欢迎榜</span></h2>
+	  	  <h2 class="bar"><span>本月热门文章</span></h2>
 	  	  <ul class="items">
 	  	  	<li>
 	  	  	  <a href="#"><img src="assets/images/center/item_sample1.jpg" alt="小空间的客厅设计" height="105" width="180" /></a>
 			  <dl class="iconList">
 			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
 			  </dl>
 			  <p><a href="#">小空间的客厅设计</a></p>
 			  <span class="top1"></span>
 	  	  	</li>
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/center/item_sample1.jpg" alt="小空间的客厅设计" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <p><a href="#">小空间的客厅设计</a></p>
-			  <span class="top2"></span>
-	  	  	</li>
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/center/item_sample1.jpg" alt="小空间的客厅设计" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <p><a href="#">小空间的客厅设计</a></p>
-			  <span class="top3"></span>
-	  	  	</li>
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/center/item_sample1.jpg" alt="小空间的客厅设计" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <p><a href="#">小空间的客厅设计</a></p>
-			  <span class="top4"></span>
-	  	  	</li>
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/center/item_sample1.jpg" alt="小空间的客厅设计" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <p><a href="#">小空间的客厅设计</a></p>
-			  <span class="top5"></span>
-	  	  	</li>
 	  	  </ul>
-		  <div class="bLine">
-		    <span></span>
-		  </div>
 	  	</div>
+	  	<div class="widget hf_hot">
+	  	  <h2 class="bar"><span>热门排行榜</span></h2>
+  	  	  <ul class="sp_hot">
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	    <li>
+              <a href="/showsubtitle.action?fid=17">换季卧室巧收纳</a>
+              <dl class="iconList">
+                <dd class="icon_like">34 人喜欢</dd>
+              </dl>
+            </li>
+  	  	  </ul>
+        </div>
 	  </div>
 	</div>
-	<div class="bottomClear"></div>
-	<div id="foot" class="cfloat">
-	  <span class="icon"></span>
-	  <p><span>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="#" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备012345号</a></span><a href="http://www.ikea.com/ms/zh_CN/virtual_catalogue/online_catalogues.html" target="_blank">2011 宜家《家居指南》</a> / <a href="http://www.ikea.com/ms/zh_CN/customer_service/splash.html" target="_blank">客户服务</a> / <a href="http://www.ikea.com/ms/zh_CN/about_ikea/index.html" target="_blank">关于宜家</a> / <a href="http://www.ikea.com/cn/zh/" target="_blank">加入我们</a> / <a href="http://www.ikea.com/ms/zh_CN/ikea_family/index.html" target="_blank">IKEA FAMILY 宜家俱乐部</a></p>
-	</div>
+  	<br class="floatClear" />
+  </div>
+  <div id="foot" class="cfloat">
+  	<h2 id="ikeaLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h2>
+  	<p>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="terms_policy.html" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备09045065号</a></p>
   </div>
   <script type="text/javascript" src="assets/scripts/jquery.js"></script>
   <script type="text/javascript" src="assets/scripts/jquery.cookie.js"></script>
