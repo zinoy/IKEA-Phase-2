@@ -482,8 +482,8 @@ h4.title a:hover{text-decoration:underline}
 .pager.nav .prev{display:inline-block;margin-right:7px}
 .pager.nav .next{display:inline-block;margin-left:7px}
 .pager.nav a,.pager.nav span{line-height:14px}
-.pager form,.pager input{display:inline-block}
-.pager form .num{font:10px Verdana;height:13px;padding:1px;width:34px}
+.pager form{display:inline-block;vertical-align:-1px}
+.pager form .num{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;font:10px Verdana;height:13px;padding:1px;width:34px}
 .pager form .go{vertical-align:-4px}
 
 .subTab{float:left;font-size:14px;margin:30px 0 0}
@@ -742,8 +742,8 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_discussion .share{float:right;margin-bottom:6px}
 .sp_discussion .share a,.sp_discussion .share span{float:right;margin-left:9px}
 .sp_discussion a.rbtn{background:url(../images/vote_repeat.gif) repeat-x;height:17px;text-decoration:none}
-.sp_discussion a.rbtn span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
-.sp_discussion a.rbtn i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
+.sp_discussion a.rbtn span{color:#a2a2a2;float:left;font-size:10px;line-height:17px;margin:0;padding-right:5px}
+.sp_discussion a.rbtn i{background:url(../images/vote_right.gif) no-repeat;float:left;font-size:0;height:17px;width:4px}
 .sp_discussion a.forward b{background:url(../images/square/forward_left.gif) no-repeat;float:left;height:17px;margin-right:8px;width:70px}
 .sp_discussion a.btn_reply b{background:url(../images/square/reply_left.gif) no-repeat;float:left;height:17px;margin-right:8px;width:50px}
 .sp_discussion a.btn_mark b{background:url(../images/square/mark_left.gif) no-repeat;float:left;height:17px;margin-right:8px;width:50px}
@@ -751,18 +751,19 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_discussion .info a{float:right;margin-left:6px}
 .sp_discussion .info h1{font-size:16px;margin:0}
 
-.sp_discussion .host{background-color:#f2f1e9;border-bottom:solid 1px #e3e0d4;border-top:solid 1px #e3e0d4;float:left;padding:15px 0 10px;position:relative;width:712px}
-.sp_discussion .user_info{border-right:solid 1px #e3e0d4;margin-right:20px;padding:0 19px 0 20px;width:118px}
+.sp_discussion .host{background-color:#f2f1e9;border-bottom:solid 1px #e3e0d4;border-top:solid 1px #e3e0d4;float:left;padding:15px 0 10px 20px;position:relative;width:692px}
+.sp_discussion .bg{background:url(../images/square/bgline.gif) repeat-y;float:left}
+.sp_discussion .user_info{margin-right:40px;width:118px}
 .sp_discussion .user_avatar h4{margin-bottom:6px}
 .sp_discussion .relation{margin-bottom:8px;width:118px}
 .sp_discussion .relation a{font-size:10px;width:38px}
-.sp_discussion .main{float:right;width:534px}
+.sp_discussion .main{float:left;padding-bottom:45px;width:530px}
 .sp_discussion .main p{margin-bottom:15px;padding-right:10px}
-.sp_discussion .reply{bottom:10px;position:absolute;right:10px;width:524px}
+.sp_discussion .reply{bottom:10px;position:absolute;right:10px;width:524px;z-index:30}
 .sp_discussion .reply span{color:#989898}
 .sp_discussion .reply a{float:right;margin-left:4px}
 
-.sp_discussion .topic{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px;position:relative;width:712px}
+.sp_discussion .topic{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px 20px;position:relative;width:692px}
 
 .sp_reply h2{font-size:12px;margin-bottom:10px}
 .sp_form .toolbar{float:left;margin-bottom:7px}
@@ -778,6 +779,7 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_form .upload{margin-bottom:10px}
 .sp_form .desc{color:#7f7f7f;margin-left:5px}
 .sp_form label{float:left;line-height:20px}
+.sp_form span{line-height:20px}
 
 .sp_new .line{clear:left;float:left;margin-bottom:15px}
 .sp_new .longField{font-size:12px;width:476px}

@@ -7,3 +7,7 @@
 .subarr .arrow{bottom:-1px}
 .lie6{margin-right:-3px}
 .logined .goMember{display:block}
+.sp_form .toolbar{clear:both}
+.sp_form .textbox i{top:-4px}
+.pager form{display:inline;vertical-align:-2px}
+.pager form .go{vertical-align:-1px}
