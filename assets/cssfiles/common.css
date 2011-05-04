@@ -69,7 +69,7 @@ a:focus{outline:none}
 
 .popup .forgetForm .bar span{background:url(../images/h2TxtC.gif) no-repeat left -120px}
 
-#container{background-color:#fff;margin:0 auto;padding-bottom:20px;width:1000px}
+#container{background-color:#fff;margin:0 auto;padding-bottom:30px;width:1000px}
 #head{float:left;height:61px;overflow:hidden;padding-top:24px;width:940px}
 
 .extlink{font-size:10px;height:20px;margin:0 auto;padding-right:3px;text-align:right;width:997px}
@@ -122,6 +122,7 @@ a:focus{outline:none}
 .member #content{background-image:url(../images/bgline_m.gif)}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
 .center #content,.topic #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
+.search #content{background:none}
 
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
@@ -130,7 +131,7 @@ h2.bar span.dynamic{background:none !important;color:#000;font:bold 12px/20px "å
 h2.h2{padding-bottom:8px}
 h2.h2 span.dynamic{font-size:16px !important}
 h2.bar i{font: bold 10px/20px Verdana,Geneva,Arial,Helvetica,sans-serif;position:absolute;top:-1px}
-.center h2.bar span,.topic h2.bar span,.event h2.bar span,.media h2.bar span,.search h2.bar span{background-image:url(../images/h2TxtC.gif)}
+.center h2.bar span,.topic h2.bar span,.event h2.bar span,.media h2.bar span{background-image:url(../images/h2TxtC.gif)}
 
 h4.title,h4.title a{font-size:12px;margin:0}
 .combo_box h4.title{float:left;margin-top:12px}
@@ -565,6 +566,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .usertab dd{float:left;margin-right:3px}
 .usertab dd a{background:url(../images/tabTxtM.gif) no-repeat;display:block;height:23px}
 .center .usertab dd a{background-image:url(../images/tabTxtC.gif)}
+.search .usertab dd a{background-image:url(../images/tabTxtS.gif)}
 .usertab dd.on a{height:25px;margin-bottom:-2px;position:relative}
 .usertab .stateAll{width:83px}
 .usertab .stateMine{background-position:-83px top;width:84px}
@@ -579,6 +581,11 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .usertab .sortbyRoom{background-position:left top;width:118px}
 .usertab .sortbyState{background-position:-118px top;width:115px}
 .usertab .sortbySeason{background-position:-233px top;width:128px}
+.usertab .searchAll{background-position:left top;width:83px}
+.usertab .searchTopic{background-position:-83px top;width:84px}
+.usertab .searchKB{background-position:-167px top;width:84px}
+.usertab .searchEvent{background-position:-251px top;width:84px}
+.usertab .searchVideo{background-position:-335px top;width:84px}
 
 .usertab .on .stateAll{background-position:left -23px}
 .usertab .on .stateMine{background-position:-83px -23px}
@@ -593,7 +600,11 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .usertab .on .stateHim{background-position:-864px -23px;width:83px}
 .usertab .on .topicHim{background-position:-947px -23px;width:83px}
 .usertab .on .sortbyRoom{background-position:left -23px}
-
+.usertab .on .searchAll{background-position:left -23px}
+.usertab .on .searchTopic{background-position:-83px -23px}
+.usertab .on .searchKB{background-position:-167px -23px}
+.usertab .on .searchEvent{background-position:-251px -23px}
+.usertab .on .searchVideo{background-position:-335px -23px}
 
 .tabpanel{background-color:#faf9f4;border:solid 2px #e3e0d4;padding:15px}
 .tabpanel .member_list li{height:auto;line-height:18px;text-indent:0}
@@ -699,6 +710,7 @@ body.frame{background:none}
 .piclist li .iconList{margin:3px 0 0}
 
 .video_like .bar{margin-bottom:0}
+
 /*****article*****/
 .article{border-top:solid 1px #e6e6e6;padding:0 20px}
 .article h2{font-size:18px;margin:15px 0;text-align:center}
@@ -712,7 +724,9 @@ body.frame{background:none}
 .scroll-pane .jspDrag{background:url(../images/scroll_btn.gif) no-repeat}
 
 /*****search*****/
-.search_result .bar span{background-position:left -160px}
+.search_result li{padding-bottom:6px;padding-left:11px}
+.search_result .tabpanel li span{padding:0}
+.search_result .tabpanel li p a{color:#787878}
 
 /*****square*****/
 .sp_groups .bar span{background-position:left -180px}
