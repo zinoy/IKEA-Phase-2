@@ -16,6 +16,7 @@ a:focus{outline:none}
 .floatClear{clear:both;font-size:0}
 .bottomClear{clear:both;font-size:0;height:10px}
 .bLine{clear:both;height:15px;padding-top:15px}
+.bLine i{float:right;font-style:normal;margin-right:10px}
 /*.bLine span{border-bottom:solid 1px #323232;float:left;height:14px;width:15px}*/
 .bLine .more{background:url(../images/buttons.gif) no-repeat;float:right;height:15px;width:65px}
 .box,.widget{margin-bottom:20px}
@@ -120,14 +121,16 @@ a:focus{outline:none}
 #content{background:url(../images/bgline.gif) repeat-y;clear:both;float:left;width:940px}
 .member #content{background-image:url(../images/bgline_m.gif)}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
-.center #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
+.center #content,.topic #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
 
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
 h2.bar span{background:url(../images/h2Txt.gif) no-repeat;display:block;height:20px;text-indent:-9999px}
 h2.bar span.dynamic{background:none !important;color:#000;font:bold 12px/20px "微软雅黑";text-indent:0}
+h2.h2{padding-bottom:8px}
+h2.h2 span.dynamic{font-size:16px !important}
 h2.bar i{font: bold 10px/20px Verdana,Geneva,Arial,Helvetica,sans-serif;position:absolute;top:-1px}
-.center h2.bar span,.event h2.bar span,.media h2.bar span,.search h2.bar span{background-image:url(../images/h2TxtC.gif)}
+.center h2.bar span,.topic h2.bar span,.event h2.bar span,.media h2.bar span,.search h2.bar span{background-image:url(../images/h2TxtC.gif)}
 
 h4.title,h4.title a{font-size:12px;margin:0}
 .combo_box h4.title{float:left;margin-top:12px}
@@ -168,7 +171,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .whats_new .combo_box .iconList{margin-top:3px}
 
 .tags dd{float:left;margin:0 2px 2px 0}
-.tags dd a{background-color:#b4b4b4;color:#fff;display:block;height:17px;line-height:17px;text-align:center;text-decoration:none;width:68px}
+.tags dd a{background-color:#b4b4b4;color:#fff;display:block;height:17px;line-height:17px;padding:0 10px;text-align:center;text-decoration:none;white-space:nowrap}
 .member .tags a{background-color:#d8d8d8;float:left;padding:0 10px;width:auto}
 
 /*****main content*****/
@@ -364,7 +367,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .type_list .tabpanel{padding-right:0}
 
 .hot_topics .bar span{background-position:left -20px}
-
+.topic_related .bar span{background-position:left -220px}
 .hf_hot .bar span{background-position:left -40px}
 
 .topic_list .bLine{padding:0}
@@ -377,19 +380,20 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_title .iconList,.event_title .iconList,.media_title .iconList,.event_title2 .iconList{float:right;height:17px;margin:0}
 .topic_title .iconList dd,.event_title .iconList dd,.media_title .iconList dd,.event_title2 .iconList dd{float:right;margin-top:3px}
 .topic_detail .detail{height:250px;overflow:hidden;width:287px}
-.topic_detail .detail .intro{height:130px}
+.topic_detail .detail .intro{height:112px}
 .topic_detail .detail .intro h4{margin:0 0 10px}
 .topic_detail .detail .intro .summary{padding:0}
 .topic_detail .tags{height:60px;padding-bottom:10px}
 .topic_detail .title{background:url(../images/center/topicTitle.gif) no-repeat;font-size:0;height:12px;margin-bottom:9px;text-indent:-9999px}
+.comments .title{margin-bottom:5px}
 .topic_detail .sub div{float:left;margin-left:14px;overflow:hidden;position:absolute;width:259px}
 .topic_detail .sub ul{height:50px;overflow:visible;width:2000px}
 .topic_detail .sub li{display:inline;float:left;margin-right:2px;position:relative}
 .topic_detail .sub li img{display:block}
 .topic_detail .sub li span{background-color:#fff;cursor:pointer;height:50px;left:0;position:absolute;top:0;width:85px}
 .topic_detail .sub li.on span{display:none}
-.topic_detail .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center;height:50px;margin-right:2px;width:12px}
-.topic_detail .sub .next{background:url(../images/slidebtns.gif) no-repeat right center;height:50px;width:12px}
+.topic_detail .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center;height:50px;margin-right:2px;width:9px}
+.topic_detail .sub .next{background:url(../images/slidebtns.gif) no-repeat right center;height:50px;width:9px}
 .topic_detail .sub span a{display:block;height:50px}
 .topic_detail .items{clear:both;height:159px;padding-top:15px}
 .topic_detail .noitem{clear:both;height:15px}
@@ -399,21 +403,34 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_detail .items dd div span{background-color:#ffbe0a;color:#000;float:left;height:20px;line-height:20px;padding:0 5px;white-space:nowrap;width:auto}
 .topic_detail .items dd.on{border-color:#ffbe0a}
 .topic_detail .items dd.on div{display:block}
+.topic_detail .title.desc{background-position:left -24px;color:#686868;font-size:12px;font-weight:normal;line-height:12px;text-indent:58px}
+.topic_detail .title.desc a{color:#686868;text-decoration:underline}
+
 .comments{clear:left}
-.state dd{float:left;margin-right:5px}
+.state{background-color:#f4f3ee;border-bottom:solid 1px #e3e0d4;border-top:solid 1px #e3e0d4;height:26px;line-height:26px;margin-bottom:16px}
+.state dd{float:left;margin-left:5px}
 .state p{color:#686868;margin-left:66px}
 .state p a{color:#686868}
+.state a.rbtn{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px;margin-top:4px;text-decoration:none}
+.state a.rbtn span{color:#a2a2a2;float:left;font-size:10px;line-height:17px;margin:0;padding-right:5px}
+.state a.rbtn i{background:url(../images/vote_right.gif) no-repeat;float:left;font-size:0;height:17px;width:4px}
+.state a.btn_like b{background:url(../images/square/like_left.gif) no-repeat;float:left;height:17px;margin-right:8px;width:56px}
 .post{clear:left;margin-bottom:15px;overflow:hidden}
-.post div{border:solid 1px #b4b4b4;height:105px;margin:5px 0 10px 66px;padding:3px;position:relative;width:665px}
+.post .textbox{height:105px;margin:5px 0 10px;padding:3px;position:relative}
 .post textarea{border:0;font-size:12px;height:102px;resize:none;width:662px}
-.post button{float:right}
 .post .arrow{background:url(../images/center/icons/form_arrow.gif) no-repeat;height:20px;left:-11px;position:absolute;top:45px;width:11px;z-index:2}
-.comments_list{clear:both;margin-left:55px}
-.comments_list li{background:url(../images/center/icons/comment_arrow.gif) no-repeat left center;margin-bottom:1px;width:684px}
-.comments_list li div{background-color:#f0f0f0;margin-left:11px;padding:15px;width:643px}
-.comments_list li a{font-weight:bold}
-.comments_list li span{color:#b4b4b4;float:right}
-.comments_list li p{clear:both;color:#787878;margin-top:10px}
+
+.comments_list .bg{background:url(../images/square/bgline.gif) repeat-y -62px top;float:left}
+.comments_list .user_info{margin-right:20px;width:76px}
+.comments_list .user_avatar h4{font-size:12px !important;margin:0}
+.comments_list .main{float:left;padding-bottom:16px;width:595px}
+.comments_list .main p{margin-bottom:15px;padding-right:10px}
+.comments_list .reply{bottom:10px;position:absolute;right:10px;width:586px}
+.comments_list .reply span{color:#989898;float:right}
+
+.comments_list li{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px 20px;position:relative;width:692px}
+.comments_list li.t{border-top:solid 1px #e3e0d4}
+.comments_list{clear:both}
 
 /*****member*****/
 .member .bar span{background:url(../images/h2TxtM.gif) no-repeat}
@@ -668,6 +685,7 @@ body.frame{background:none}
 .video_new .bar span{background:url(../images/h2Txt.gif) no-repeat left -20px !important}
 .new_video .bar span{background-position:left -60px}
 .video_hot .bar span{background-position:left -200px}
+.video_like .bar span{background-position:left -180px}
 
 .video_new .info{float:right;width:308px}
 .video_new .info h4{font-size:12px;margin-bottom:12px}
