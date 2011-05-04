@@ -110,7 +110,7 @@ $(document).ready(function(){
         });
         return false;
     });
-    if($('#pageNav a.on').length>0){
+    if ($('#pageNav a.on').length > 0) {
         $('#pageNav a.on').parent('li').append('<i></i>');
         $('#pageNav i').width($('#pageNav a.on').parent('li').width());
     }
@@ -135,6 +135,12 @@ $(document).ready(function(){
             default:
                 break;
         }
+    });
+    $('.rate_room li').each(function(i, n){
+        $(n).children('a:first').click(function(){
+            showPopup('pic', '<img src="../assets/images/temp/zoom_sample.jpg" alt="sample" height="526" width="716" />');
+            return false;
+        });
     });
     initSliderBar();
     bindButtons();
@@ -475,6 +481,7 @@ function centerPopup(){
             top: top
         });
     });
+    resizeMask();
 }
 
 function initDefault(){
@@ -526,7 +533,7 @@ function uploadSuccess(file, data, response){
     $('#step2').show();
     var h = json.picH;
     var w = json.picW;
-    var initH,initW;
+    var initH, initW;
     if (h < w) {
         if (h < 180) {
             initH = h;

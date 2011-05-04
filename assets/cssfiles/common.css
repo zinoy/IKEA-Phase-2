@@ -37,7 +37,7 @@ a:focus{outline:none}
 .mask{background-color:#000;left:0;position:absolute;top:0;z-index:90}
 
 .popup{-moz-box-shadow:-4px 5px 18px rgba(0,0,0,.45);-webkit-box-shadow:-4px 5px 18px rgba(0,0,0,.45);box-shadow:-4px 5px 18px rgba(0,0,0,.45);background-color:#fff;left:0;padding:40px 40px 0;position:absolute;top:0;z-index:99}
-.popup .close{background:url(../images/popups/close.gif) no-repeat;height:15px;position:absolute;right:5px;top:5px;width:15px}
+.popup .close{background:url(../images/icons.gif) no-repeat left -213px;height:15px;position:absolute;right:5px;top:5px;width:15px}
 .popup .poll{padding-bottom:40px;width:260px}
 .popup .poll table{margin-bottom:30px;width:260px}
 .popup .poll th{font-size:10px;font-weight:normal;text-align:left}
@@ -47,6 +47,7 @@ a:focus{outline:none}
 .popup .notice{background:url(../images/popups/icon_smile.gif) no-repeat;padding:20px 0 48px 75px;width:160px}
 .popup .success{background:url(../images/popups/icon_success.gif) no-repeat;padding:20px 0 48px 75px;width:160px}
 .popup .error{background:url(../images/popups/icon_error.gif) no-repeat;padding:20px 0 48px 75px;width:160px}
+.popup .pic{padding-bottom:48px}
 
 .popup .forget{background:url(../images/popups/icon_mail.gif) no-repeat;padding:5px 0 48px 75px;width:175px}
 
@@ -246,7 +247,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .rate_room li{float:left;margin-left:18px;width:141px}
 .rate_room li.f{margin-left:0 !important}
 .rate_room li .title{display:block;font-weight:bold;margin:6px 0;overflow:hidden}
-.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px;width:100%}
+.rate_room li .vote{background:url(../images/vote_repeat.gif) repeat-x;float:left;height:17px;text-decoration:none;width:100%}
 .rate_room li .vote span{color:#a2a2a2;font-size:10px;line-height:17px;padding-right:5px}
 .rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
 .rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
