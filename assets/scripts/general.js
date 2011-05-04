@@ -204,7 +204,8 @@ function hfCenter(){
             iCount = 1;
         }
         var urls = $('.slideshow li span.hidden_elem');
-        var ulWidth = iCount * 740;
+        var w = $('.slideshow li').width();
+        var ulWidth = iCount * w;
         var sIndex = 0;
         $('.slideshow ul').css("width", ulWidth + 'px');
         $('.slideshow dd a').mouseover(function(){
@@ -212,7 +213,7 @@ function hfCenter(){
             $('.slideshow dd.on').removeClass('on');
             $(this).parent('dd').addClass('on');
             var idx = $(this).text() - 1;
-            var ulMargin = idx * 740 * -1;
+            var ulMargin = idx * w * -1;
             $(".slideshow ul").animate({
                 'margin-left': ulMargin + 'px'
             }, "slow");
@@ -236,7 +237,8 @@ function hfCenter(){
         }
         $('.slideshow dd.on').removeClass('on');
         $($('.slideshow dd')[sIndex]).addClass('on');
-        var ulMargin = sIndex * 740 * -1;
+        var w = $('.slideshow li').width();
+        var ulMargin = sIndex * w * -1;
         $(".slideshow ul").animate({
             'margin-left': ulMargin + 'px'
         }, "slow");

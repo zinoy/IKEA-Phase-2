@@ -122,8 +122,8 @@ a:focus{outline:none}
 #content{background:url(../images/bgline.gif) repeat-y;clear:both;float:left;width:940px}
 .member #content{background-image:url(../images/bgline_m.gif)}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
-.center #content,.topic #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
-.search #content{background:none}
+.center #content,.event #content,.topic #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
+.event #content.m,.search #content{background:none}
 
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
@@ -132,7 +132,8 @@ h2.bar span.dynamic{background:none !important;color:#000;font:bold 12px/20px "å
 h2.h2{padding-bottom:8px}
 h2.h2 span.dynamic{font-size:16px !important}
 h2.bar i{font: bold 10px/20px Verdana,Geneva,Arial,Helvetica,sans-serif;position:absolute;top:-1px}
-.center h2.bar span,.topic h2.bar span,.event h2.bar span,.media h2.bar span{background-image:url(../images/h2TxtC.gif)}
+.center h2.bar span,.topic h2.bar span,.media h2.bar span{background-image:url(../images/h2TxtC.gif)}
+.event h2.bar span{background-image:url(../images/h2TxtE.gif)}
 
 h4.title,h4.title a{font-size:12px;margin:0}
 .combo_box h4.title{float:left;margin-top:12px}
@@ -161,6 +162,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .icon_comt{background-position:left -45px !important}
 .icon_time{background-position:left -374px !important}
 .icon_view{background-position:left -334px !important}
+.icon_join{background-position:left -571px !important}
 .rank1{background-position:left -65px !important}
 .rank2{background-position:left -85px !important}
 .rank3{background-position:left -105px !important}
@@ -342,7 +344,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 
 .slideshow{overflow:hidden;position:relative;width:710px}
 .slideshow ul{width:20000px}
-.slideshow li{float:left;width:740px}
+.slideshow li{float:left;width:710px}
 .slideshow li img{display:block}
 .slideshow .numbers{bottom:5px;position:absolute;right:5px;z-index:3}
 .slideshow .numbers dd{background-color:#323232;float:left;font:10px/13px Verdana;height:13px;margin-left:1px;width:13px}
@@ -405,8 +407,10 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_detail .items dd div span{background-color:#ffbe0a;color:#000;float:left;height:20px;line-height:20px;padding:0 5px;white-space:nowrap;width:auto}
 .topic_detail .items dd.on{border-color:#ffbe0a}
 .topic_detail .items dd.on div{display:block}
-.topic_detail .title.desc{background-position:left -24px;color:#686868;font-size:12px;font-weight:normal;line-height:12px;text-indent:58px}
-.topic_detail .title.desc a{color:#686868;text-decoration:underline}
+.title.desc{background:url(../images/topicTitle.gif) no-repeat left -24px;color:#686868;font-size:12px;font-weight:normal;line-height:12px;text-indent:58px}
+.title.desc a{color:#686868;text-decoration:underline}
+.event .title.desc{background-position:left -36px}
+.media .title.desc{background-position:left -48px}
 
 .comments{clear:left}
 .state{background-color:#f4f3ee;border-bottom:solid 1px #e3e0d4;border-top:solid 1px #e3e0d4;height:26px;line-height:26px;margin-bottom:16px}
@@ -425,7 +429,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .comments_list .bg{background:url(../images/square/bgline.gif) repeat-y -62px top;float:left}
 .comments_list .user_info{margin-right:20px;width:76px}
 .comments_list .user_avatar h4{font-size:12px !important;margin:0}
-.comments_list .main{float:left;padding-bottom:16px;width:595px}
+.comments_list .main{float:left;padding-bottom:16px;width:590px}
 .comments_list .main p{margin-bottom:15px;padding-right:10px}
 .comments_list .reply{bottom:10px;position:absolute;right:10px;width:586px}
 .comments_list .reply span{color:#989898;float:right}
@@ -433,6 +437,9 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .comments_list li{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px 20px;position:relative;width:692px}
 .comments_list li.t{border-top:solid 1px #e3e0d4}
 .comments_list{clear:both}
+
+.event_mini .comments_list li{border-bottom:solid 1px #e3e0d4;float:left;padding:15px 0 10px 20px;position:relative;width:920px}
+.event_mini .comments_list .main{width:824px}
 
 /*****member*****/
 .member .bar span{background:url(../images/h2TxtM.gif) no-repeat}
@@ -643,18 +650,21 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .my_followed .bar span{background-position:left -240px}
 
 /*****event*****/
-.event_news .bar span{background-position:left -140px}
-.event_review .bar span{background-position:left -40px}
+.event_news .bar span{background-position:left top}
+.events_list .bar span{background-position:left -40px}
+.event_join .bar span{background-position:left -20px}
 
+.event_back{height:17px;margin:10px 0}
+.event_back a{background:url(../images/events/btn_back.gif);float:right;font-size:0;height:17px;width:101px}
 .event_list .bLine{padding:0}
 
 .event .items li,.media .items li{display:list-item;margin-bottom:18px;padding:0}
 .event .items a,.media .items a{display:block}
 .event .items .summary,.media .items .summary{padding-top:2px}
 
-.event_detail .info,.media_detail .info{clear:both;height:250px;margin-bottom:15px}
-.event_detail .detail,.media_detail .detail{width:287px}
-.event_detail .detail h4,.media_detail .detail h4{margin:0}
+.event_detail .info,.media_detail .info{clear:both;margin-bottom:15px}
+.event_detail .detail h4{margin:0}
+.media_detail .detail h4{margin-top:15px}
 .event_detail .detail .summary,.media_detail .detail .summary{padding:0}
 .event_detail .detail p,.media_detail .detail p{margin-top:10px}
 
@@ -662,15 +672,17 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_detail .pic .next,.event_detail .pic .next,.media_detail .pic .next{background:url(../images/icons.gif) no-repeat left -178px;height:28px;position:absolute;right:0;top:116px;width:28px}
 .topic_detail .pic .prev,.event_detail .pic .prev,.media_detail .pic .prev{background:url(../images/icons.gif) no-repeat left -150px;height:28px;left:0;position:absolute;top:116px;width:28px}
 
-.event_detail .sub,.media_detail .sub{clear:both;height:80px;margin-bottom:30px}
-.event_detail .sub div,.media_detail .sub div{display:inline;float:left;margin-left:4px;overflow:hidden;position:absolute;width:705px}
-.event_detail .sub ul,.media_detail .sub ul{height:78px;overflow:visible;padding:1px 0;width:2000px}
+.event_detail .sub,.media_detail .sub{clear:both;height:74px;margin-bottom:30px}
+.event_detail .sub div,.media_detail .sub div{display:inline;float:left;margin-left:4px;overflow:hidden;position:absolute;width:674px}
+.event_detail .sub ul,.media_detail .sub ul{height:74px;overflow:visible;padding:1px 0;width:2000px}
 .event_detail .sub li,.media_detail .sub li{display:inline;float:left;margin-right:7px;position:relative}
 .event_detail .sub li img,.media_detail .sub li img{display:block}
-.event_detail .sub li span,.media_detail .sub li span{background-color:#fff;cursor:pointer;height:78px;left:0;position:absolute;top:0;width:135px}
+.event_detail .sub li span,.media_detail .sub li span{background-color:#fff;cursor:pointer;height:74px;left:0;position:absolute;top:0;width:129px}
+.media_detail .sub li i{background:url(../images/media/icon_play.png) no-repeat center;cursor:pointer;height:74px;left:0;position:absolute;top:0;width:129px}
 .event_detail .sub li.on span,.media_detail .sub li.on span{display:none}
-.event_detail .sub .prev,.media_detail .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center #414141;height:80px;margin-right:2px;width:12px}
-.event_detail .sub .next,.media_detail .sub .next{background:url(../images/slidebtns.gif) no-repeat right center #414141;height:80px;width:12px}
+.media_detail .sub li.on i{display:none}
+.event_detail .sub .prev,.media_detail .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center #414141;height:74px;margin-right:5px;width:9px}
+.event_detail .sub .next,.media_detail .sub .next{background:url(../images/slidebtns.gif) no-repeat right center #414141;height:74px;width:9px}
 .event_detail .sub span a,.media_detail .sub span a{display:block;height:80px}
 
 .event_title2{float:left;height:22px;margin-bottom:15px;width:740px}
