@@ -149,6 +149,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .whats_new .combo_box h4.title{margin:0}
 #contCol{width:710px}
 .s #contCol{width:940px}
+.event #content.m #contCol{width:740px}
 #leftCol{padding-right:21px;width:200px}
 .member #leftCol{width:178px}
 #mainCol{width:460px}

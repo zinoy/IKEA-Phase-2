@@ -18,8 +18,9 @@
   <![endif]-->
 </head>
 <body class="event">
+  <div class="extlink"></div>
   <div id="container">
-  	<div id="head" role="banner">
+  	<div id="head" class="panel" role="banner">
       <h1 id="siteLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h1>
 	  <div id="mainNav">
 	  	<div class="lfloat">
@@ -42,23 +43,12 @@
 		</div>
 	  </div>
   	</div>
-	<div id="content">
-	  <div id="userBar">
-		<dl>
-		  <dd class="lside"><a href="#" class="gbtn highlight"><span>立即登录</span></a></dd>
-		  <dd><a href="logout" class="gbtn highlight"><span>注册新用户</span></a></dd>
-		</dl>
-	  	<span></span>
-	  </div>
+	<div class="breadcrumbs">
+	  <a href="#">宜家社区</a>
+	  <a class="icon" href="#">爱家行动</a>
+	</div>
+	<div id="content" class="panel m">
       <div id="contCol" class="lfloat">
-      	<div class="event_title2">
-		  <dl class="iconList">
-		  	<dt class="btn_like"><a href="javascript:;" title="赞"><span class="hidden_elem">赞</span></a></dt>
-			<dd class="icon_comt">160 条评论</dd>
-			<dd class="icon_like">256 人喜欢</dd>
-			<dd class="icon_time">2011-02-18 14:53 发布</dd>
-		  </dl>
-      	</div>
 		<div class="innerBox event_detail2">
 		  <div class="info">
 		  	<div class="kv"><img src="assets/images/events/event_challenge.jpg" alt="挑战宜家" height="390" width="740" /></div>
@@ -66,82 +56,109 @@
 		  <div class="table_list">
 		  	<iframe allowtransparency="yes" frameborder="0" src="events_challenge1.html" height="708" width="710" scrolling="no"></iframe>
 		  </div>
-		  <div class="bLine">
-		    <span></span>
-		  </div>
 		</div>
-	    <div class="comments">
-	  	  <div class="state">
-	  	    <dl>
-	  	  	  <dd><a href="#"><img src="assets/images/center/icons/share_weibo.gif" alt="新浪微博" height="12" width="12" title="分享到新浪微博" /></a></dd>
-	  	  	  <dd><a href="#"><img src="assets/images/center/icons/share_kaixin001.gif" alt="开心网" height="12" width="12" title="分享到开心网" /></a></dd>
-	  	  	  <dd><a href="#"><img src="assets/images/center/icons/share_renren.gif" alt="人人网" height="12" width="12" title="分享到人人网" /></a></dd>
-	  	    </dl>
-		    <p>* 亲爱的用户，<a href="#">注册</a>/<a href="#">登录</a>后才可以留言哦</p>
-	  	  </div>
-		  <form class="post" method="post" action="comment">
-		    <div>
-		  	  <p><textarea cols="80" rows="3"></textarea></p>
-		      <span class="arrow"></span>
-		    </div>
-		    <button class="gbtn highlight" type="submit"><span>发表评论</span></button>
-		  </form>
-		  <ul class="comments_list">
-		    <li>
-		   	  <div><span>2011-03-03 14:56</span><a>用户名</a>
-		  	  <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果，这种不需锤子和钉子的布置受到很多年轻家庭的喜爱。</p>
-		  	  </div>
-		    </li>
-		    <li>
-		      <div><span>2011-03-03 14:56</span><a>用户名</a>
-			  <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果，这种不需锤子和钉子的布置受到很多年轻家庭的喜爱。</p>
-			  </div>
-		    </li>
-		    <li>
-		  	  <div><span>2011-03-03 14:56</span><a>用户名</a>
-			  <p>如果想尝试新的造型和组合，可以在墙上先装几条横板，然后在横版上自由的摆放不同造型的相框，用相框本身的形状创造出不同的视觉效果，这种不需锤子和钉子的布置受到很多年轻家庭的喜爱。</p>
-			  </div>
-		    </li>
-		  </ul>
-	    </div>
+        <p class="event_back"><a href="list_events.html"><span class="hidden_elem">返回活动首页</span></a></p>
+        <div class="comments">
+          <div class="state">
+            <span class="lfloat">分享到</span>
+            <dl class="lfloat">
+              <dd><a href="#"><img src="assets/images/center/icons/share_weibo.gif" alt="新浪微博" height="12" width="12" title="分享到新浪微博" /></a></dd>
+              <dd><a href="#"><img src="assets/images/center/icons/share_kaixin001.gif" alt="开心网" height="12" width="12" title="分享到开心网" /></a></dd>
+              <dd><a href="#"><img src="assets/images/center/icons/share_renren.gif" alt="人人网" height="12" width="12" title="分享到人人网" /></a></dd>
+              <dd><a href="#" class="rbtn btn_like"><b></b><span>(256)</span><i></i></a></dd>
+            </dl>
+          </div>
+          <h4 class="title desc"><span class="hidden_elem">话题评论</span><span>* 亲爱的用户，<a href="#">注册</a>/<a href="#">登录</a>后才可以留言哦</span></h4>
+          <form class="post sp_form" method="post" action="comment">
+            <div class="textbox">
+              <textarea cols="80" rows="10"></textarea>
+              <i></i>
+            </div>
+            <div class="line">
+              <label>选择标签：</label>
+                <dl class="cblist">
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                  <dd><input type="checkbox" class="iptchk" /><label>标签1</label></dd>
+                </dl>
+              </div>
+            <p class="cfloat">
+              <button type="submit" class="gbtn"><span>发表评论</span></button>
+              <span class="desc">完成后可按Ctrl+Enter发表</span>
+            </p>
+          </form>
+          <ul class="comments_list">
+            <li class="t">
+              <div class="bg">
+                <div class="lfloat user_info">
+                  <div class="user_avatar">
+                    <img src="assets/images/temp/head1.jpg" height="48" width="48" alt="用户名称" />
+                    <h4><a href="#">用户名</a></h4>
+                  </div>
+                </div>
+                <div class="main">
+                  <p>有没有过这样让你的头疼的事儿？早晨上班前好不容易想好穿什么，于是开始在衣柜里埋头寻找，最后终于从衣山裤海里拽出那件皱巴巴的衣服。别小看了衣柜的几尺空间，它记录着我们生活的小幸福。即使是同一个衣柜，随着主人的身份转变、生活状态的改变，甚至心情的改变都变化出不同个性。</p>
+                </div>
+              </div>
+              <div class="reply">
+                <span>2011-05-02 16:08:12</span>
+              </div>
+            </li>
+            <li>
+              <div class="bg">
+                <div class="lfloat user_info">
+                  <div class="user_avatar">
+                    <img src="assets/images/temp/head3.jpg" height="48" width="48" alt="用户名称" />
+                    <h4><a href="#">用户名</a></h4>
+                  </div>
+                </div>
+                <div class="main">
+                  <p>有没有过这样让你的头疼的事儿？早晨上班前好不容易想好穿什么，于是开始在衣柜里埋头寻找，最后终于从衣山裤海里拽出那件皱巴巴的衣服。别小看了衣柜的几尺空间，它记录着我们生活的小幸福。即使是同一个衣柜，随着主人的身份转变、生活状态的改变，甚至心情的改变都变化出不同个性。</p>
+                </div>
+              </div>
+              <div class="reply">
+                <span>2011-05-02 16:08:12</span>
+              </div>
+            </li>
+            <li>
+              <div class="bg">
+                <div class="lfloat user_info">
+                  <div class="user_avatar">
+                    <img src="assets/images/temp/head4.jpg" height="48" width="48" alt="用户名称" />
+                    <h4><a href="#">用户名</a></h4>
+                  </div>
+                </div>
+                <div class="main">
+                  <p>有没有过这样让你的头疼的事儿？早晨上班前好不容易想好穿什么，于是开始在衣柜里埋头寻找，最后终于从衣山裤海里拽出那件皱巴巴的衣服。别小看了衣柜的几尺空间，它记录着我们生活的小幸福。即使是同一个衣柜，随着主人的身份转变、生活状态的改变，甚至心情的改变都变化出不同个性。</p>
+                </div>
+              </div>
+              <div class="reply">
+                <span>2011-05-02 16:08:12</span>
+              </div>
+            </li>
+          </ul>
+        </div>
 	    <div class="bLine">
 	  	  <a href="#" class="more"><span class="hidden_elem">查看更多</span></a>
 	      <span></span>
 	    </div>
       </div>
-	  <div id="userCol" class="rfloat">
-	  	<div class="widget event_review">
-	  	  <h2 class="bar"><span>活动回顾</span></h2>
-	  	  <ul class="items">
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/events/review_1.jpg" alt="活动名称" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <h4><a href="#">活动名称</a></h4>
-			  <p class="summary">通过照片及文字的形式展示家里的储物收纳的困扰和现状。</p>
-	  	  	</li>
-	  	  	<li>
-	  	  	  <a href="#"><img src="assets/images/events/review_2.jpg" alt="活动名称" height="105" width="180" /></a>
-			  <dl class="iconList">
-			    <dd class="icon_like">256 人喜欢</dd>
-			    <dd class="icon_comt">160 条评论</dd>
-			  </dl>
-			  <p><strong><a href="#">活动名称</a></strong></p>
-			  <p class="summary">通过照片及文字的形式展示家里的储物收纳的困扰和现状。</p>
-	  	  	</li>
-	  	  </ul>
-	  	</div>
-	  </div>
 	</div>
-	<div class="bottomClear"></div>
-	<div id="foot" class="cfloat">
-	  <span class="icon"></span>
-	  <p><span>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="#" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备012345号</a></span><a href="http://www.ikea.com/ms/zh_CN/virtual_catalogue/online_catalogues.html" target="_blank">2011 宜家《家居指南》</a> / <a href="http://www.ikea.com/ms/zh_CN/customer_service/splash.html" target="_blank">客户服务</a> / <a href="http://www.ikea.com/ms/zh_CN/about_ikea/index.html" target="_blank">关于宜家</a> / <a href="http://www.ikea.com/cn/zh/" target="_blank">加入我们</a> / <a href="http://www.ikea.com/ms/zh_CN/ikea_family/index.html" target="_blank">IKEA FAMILY 宜家俱乐部</a></p>
-	</div>
+  	<br class="floatClear" />
+  </div>
+  <div id="foot" class="cfloat">
+  	<h2 id="ikeaLogo"><a href="http://www.ikea.com/cn/zh/" title="宜家官网" target="_blank"></a></h2>
+  	<p>&copy; Inter IKEA Systems B.V. 1999-2011 | <a href="terms_policy.html" target="_blank">隐私政策</a> | <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备09045065号</a></p>
   </div>
   <script type="text/javascript" src="assets/scripts/jquery.js"></script>
+  <script type="text/javascript" src="assets/scripts/jquery.cookie.js"></script>
   <script type="text/javascript" src="assets/scripts/jquery.pngFix.js"></script>
   <script type="text/javascript" src="assets/scripts/swfobject.js"></script>
   <script type="text/javascript" src="assets/scripts/general.js"></script>
