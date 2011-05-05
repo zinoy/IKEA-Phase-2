@@ -108,6 +108,14 @@ a:focus{outline:none}
 /*****header end*****/
 
 /*****footer start*****/
+#sitemap{background-color:#fff;margin:5px auto 0;padding:30px;width:940px}
+#sitemap ul{float:left}
+#sitemap li{border-left:solid 1px #e6e6e6;float:left;margin-left:60px;padding-left:60px}
+#sitemap li.f{border:0;margin:0}
+#sitemap dt{font-weight:bold}
+#sitemap dd{margin-top:10px}
+#sitemap dd a{color:#787878}
+
 #foot{margin:15px auto 0;padding-top:5px;position:relative;width:1000px}
 #ikeaLogo{background:url(../images/ikea.gif) no-repeat;float:left;height:22px;margin-top:-1px;width:65px}
 #ikeaLogo a{display:block;height:29px}
@@ -154,7 +162,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 
 /*****icons*****/
 .iconList{height:10px;margin:15px 0 10px;width:auto}
-.iconList dd,.iconList dt{background:url(../images/icons.gif) no-repeat;display:inline;float:left;font-size:10px;height:10px;line-height:12px;margin-right:10px;padding-left:16px}
+.iconList dd,.iconList dt{background:url(../images/icons.gif) no-repeat;display:inline;float:left;font-size:10px;height:10px;line-height:12px;margin-right:10px;padding-left:16px;white-space:nowrap}
 .iconList dt{width:14px}
 .iconList .btn_like{background:none;float:right;margin:0;padding:0;width:55px}
 .iconList .btn_like a{background:url(../images/center/btn_like.gif) no-repeat;display:block;height:17px}
@@ -175,7 +183,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .whats_new .combo_box .iconList{margin-top:3px}
 
 .tags dd{float:left;margin:0 2px 2px 0}
-.tags dd a{background-color:#b4b4b4;color:#fff;display:block;height:17px;line-height:17px;padding:0 10px;text-align:center;text-decoration:none;white-space:nowrap}
+.tags dd a{background-color:#b4b4b4;color:#fff;float:left;height:17px;line-height:17px;padding:0 10px;text-align:center;text-decoration:none;white-space:nowrap}
 .member .tags a{background-color:#d8d8d8;float:left;padding:0 10px;width:auto}
 
 /*****main content*****/
@@ -356,9 +364,9 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .accordion h2 a{background:url(../images/center/accordion.gif) no-repeat -180px top;display:block;height:20px}
 .accordion h2 a.life{background-position:-180px -20px}
 .accordion h2 a.season{background-position:-180px -40px}
-.accordion h2 a.room.on{background-position:left top}
-.accordion h2 a.life.on{background-position:left -20px}
-.accordion h2 a.season.on{background-position:left -40px}
+.accordion h2.on a.room{background-position:left top}
+.accordion h2.on a.life{background-position:left -20px}
+.accordion h2.on a.season{background-position:left -40px}
 .accordion dl{border-top:solid 1px #e6e6e6;margin-bottom:15px}
 .accordion dd{border-bottom:solid 1px #e6e6e6}
 .accordion dd a{color:#787878;display:block;height:30px;text-decoration:none}
@@ -368,7 +376,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .accordion dd a span{display:inline;float:left;height:30px;line-height:30px;margin-left:15px}
 
 .type_list .bLine{padding-top:5px}
-.type_list .tabpanel{padding-right:0}
+.type_list .tabpanel{float:left;padding-right:0;width:691px}
 
 .hot_topics .bar span{background-position:left -20px}
 .topic_related .bar span{background-position:left -220px}
@@ -390,7 +398,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_detail .tags{height:60px;padding-bottom:10px}
 .topic_detail .title{background:url(../images/center/topicTitle.gif) no-repeat;font-size:0;height:12px;margin-bottom:9px;text-indent:-9999px}
 .comments .title{margin-bottom:5px}
-.topic_detail .sub div{float:left;margin-left:14px;overflow:hidden;position:absolute;width:259px}
+.topic_detail .sub div{display:inline;float:left;margin-left:3px;overflow:hidden;position:absolute;width:259px}
 .topic_detail .sub ul{height:50px;overflow:visible;width:2000px}
 .topic_detail .sub li{display:inline;float:left;margin-right:2px;position:relative}
 .topic_detail .sub li img{display:block}
@@ -407,8 +415,8 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .topic_detail .items dd div span{background-color:#ffbe0a;color:#000;float:left;height:20px;line-height:20px;padding:0 5px;white-space:nowrap;width:auto}
 .topic_detail .items dd.on{border-color:#ffbe0a}
 .topic_detail .items dd.on div{display:block}
-.title.desc{background:url(../images/topicTitle.gif) no-repeat left -24px;color:#686868;font-size:12px;font-weight:normal;line-height:12px;text-indent:58px}
-.title.desc a{color:#686868;text-decoration:underline}
+.comments .title{background:url(../images/topicTitle.gif) no-repeat left -24px;color:#686868;font-size:12px;font-weight:normal;line-height:12px;text-indent:58px}
+.comments .title a{color:#686868;text-decoration:underline}
 .event .title.desc{background-position:left -36px}
 .media .title.desc{background-position:left -48px}
 
@@ -683,7 +691,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .media_detail .sub li.on i{display:none}
 .event_detail .sub .prev,.media_detail .sub .prev{background:url(../images/slidebtns.gif) no-repeat left center #414141;height:74px;margin-right:5px;width:9px}
 .event_detail .sub .next,.media_detail .sub .next{background:url(../images/slidebtns.gif) no-repeat right center #414141;height:74px;width:9px}
-.event_detail .sub span a,.media_detail .sub span a{display:block;height:80px}
+.event_detail .sub span a,.media_detail .sub span a{display:block;height:74px}
 
 .event_title2{float:left;height:22px;margin-bottom:15px;width:740px}
 .event_detail2{clear:right}
@@ -716,10 +724,13 @@ body.frame{background:none}
 .video_new .info p{margin-bottom:22px}
 .video_new .info .iconList dd{margin-bottom:10px}
 
-.piclist li{float:left;margin-bottom:20px;margin-left:23px}
+.new_video .hot_list li{width:180px}
+.new_video .hot_list li div{width:98px}
+
+.piclist li{float:left;margin-bottom:20px;margin-left:23px;width:160px}
 .piclist li.lside{margin:0}
 .piclist li img{display:block}
-.piclist li h4{margin:8px 0 0}
+.piclist li h4{font-size:12px;margin:8px 0 0}
 .piclist li .iconList{margin:3px 0 0}
 
 .video_like .bar{margin-bottom:0}
@@ -835,5 +846,5 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_new .line{clear:left;float:left;margin-bottom:15px}
 .sp_new .longField{font-size:12px;width:476px}
 .sp_form .cblist{float:left;width:650px}
-.sp_form .cblist dd{float:left;margin:0 15px 15px 0}
+.sp_form .cblist dd{display:inline;float:left;margin:0 15px 15px 0}
 .sp_form .cblist label{float:none}

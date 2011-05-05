@@ -1,5 +1,4 @@
 #userSignin p,.popup .register p,.popup .signin p,.popup .forgetForm p{height:auto;margin-bottom:10px}
-.topic_detail .sub div{margin:0}
 .tabBox{padding-bottom:15px}
 .user_edit .arrow{bottom:-1px}
 .event_detail2 .detail .arrow{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/images/events/event_arrow.png', sizingMethod='scale');left:3px}
@@ -11,3 +10,5 @@
 .sp_form .textbox i{top:-4px}
 .pager form{display:inline;vertical-align:-2px}
 .pager form .go{vertical-align:-1px}
+.state dd{margin-top:8px}
+.state dd a.rbtn{margin-top:-3px;position:relative}
