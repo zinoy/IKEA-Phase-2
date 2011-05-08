@@ -192,8 +192,8 @@ function homeAccordion(){
         $(this).addClass('on').next('.acc').slideDown('normal');
         return false;
     }
-    $('.hfcenter .rooms').click(act);
-    $('.hfcenter .hot').click(act);
+    $('.hfcenter #rooms').click(act);
+    $('.hfcenter #hot').click(act);
 }
 
 function hfCenter(){

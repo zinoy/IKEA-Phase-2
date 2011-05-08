@@ -206,10 +206,10 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .room_type .r11{background-position:left -580px}
 .room_type .r12{background-position:left -638px}
 
-.hfcenter .rooms{background:url(../images/accordion_home.gif) no-repeat;display:block;height:20px;margin-bottom:10px}
-.hfcenter .rooms.on{background:url(../images/accordion_home.gif) no-repeat left -20px;height:20px}
-.hfcenter .hot{background:url(../images/accordion_home.gif) no-repeat left -40px;clear:left;display:block;height:20px;margin-bottom:15px}
-.hfcenter .hot.on{background:url(../images/accordion_home.gif) no-repeat left -60px}
+.hfcenter #rooms{background:url(../images/accordion_home.gif) no-repeat;display:block;height:20px;margin-bottom:10px}
+.hfcenter #rooms.on{background:url(../images/accordion_home.gif) no-repeat left -20px;height:20px}
+.hfcenter #hot{background:url(../images/accordion_home.gif) no-repeat left -40px;clear:left;display:block;height:20px;margin-bottom:15px}
+.hfcenter #hot.on{background:url(../images/accordion_home.gif) no-repeat left -60px}
 .hfcenter .top,.ikea_events .top{border-bottom:solid 1px #e6e6e6;height:54px;margin-bottom:10px;padding-bottom:15px}
 .ikea_events .top{height:60px}
 .hfcenter .top div,.ikea_events .top div{width:154px}
@@ -560,6 +560,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 
 .user_edit .password label{width:96px}
 
+.user_edit .summary{padding:0}
 .user_edit .avatar p{height:18px}
 .user_edit #step1 form{width:130px}
 .user_edit .avatar .options{clear:none;float:right;width:470px}
