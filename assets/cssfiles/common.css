@@ -825,7 +825,10 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_discussion .relation{margin-bottom:8px;width:118px}
 .sp_discussion .relation a{font-size:10px;width:38px}
 .sp_discussion .main{float:left;padding-bottom:45px;width:530px}
-.sp_discussion .main p{margin-bottom:15px;padding-right:10px}
+.sp_discussion .main p{font-size:14px;margin-bottom:15px;padding-right:10px}
+.sp_discussion .main blockquote{background-color:#f1f0f0;margin:10px 0 40px;padding:10px 57px}
+.sp_discussion .main blockquote p{color:#464646;font-size:12px;margin-bottom:5px}
+.sp_discussion .main blockquote span{color:#969696;display:block}
 .sp_discussion .reply{bottom:10px;position:absolute;right:10px;width:524px;z-index:30}
 .sp_discussion .reply span{color:#989898}
 .sp_discussion .reply a{float:right;margin-left:4px}
