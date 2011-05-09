@@ -10,6 +10,5 @@
 .sp_form .textbox i{top:-4px}
 .pager form{display:inline;vertical-align:-2px}
 .pager form .go{vertical-align:-1px}
-.state dd{margin-top:8px}
-.state dd a.rbtn{margin-top:-3px;position:relative}
+.state dd a.rbtn{position:relative}
 .userBar div{top:-3px}

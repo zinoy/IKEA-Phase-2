@@ -191,16 +191,20 @@
     		  <div class="box whats_new">
     		  	<h2 class="bar"><span>爱家抢先看</span></h2>
       			<div id="mediaCtn">
-      			  <a href="#" target="_blank" class="banner"><img src="assets/images/temp/player_holder.jpg" width="460" height="325" alt="有限空间 无限可能"/></a>
-      			  <a href="#like"></a>
-      			  <span style="right:0">46937 人喜欢</span>
-      			</div>
-      			<div class="combo_box hidden_elem">
-      			  <h4 class="title"><a href="#" rel="56">宜家收纳性格测试</a></h4>
-      			  <dl class="iconList rfloat">
-      				<dd class="icon_comt">160 条评论</dd>
-      			  	<dd class="icon_like">256 人喜欢</dd>
-      			  </dl>
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="460" height="350" id="homePlayer">
+                    <param name="movie" value="assets/flash/home.swf" />
+					<param name="wmode" value="transparent" />
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="assets/flash/home.swf" width="460" height="350">
+                      <param name="wmode" value="transparent" />
+                    <!--<![endif]-->
+                      <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                      </a>
+                    <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                  </object>
       			</div>
     		  </div>
     		  <div class="box discussion">
@@ -211,6 +215,7 @@
     		  	    <div class="bubble">
                   <dl class="iconList">
                     <dt class="hot1"></dt>
+                    <dd class="icon_view">160 人浏览</dd>
                     <dd class="icon_comt">256 人回复</dd>
                   </dl>
                   <b>1分钟前</b>
@@ -224,6 +229,7 @@
                 <div class="bubble">
                   <dl class="iconList">
                     <dt class="hot2"></dt>
+                    <dd class="icon_view">160 人浏览</dd>
                     <dd class="icon_comt">256 人回复</dd>
                   </dl>
                   <b>1分钟前</b>
@@ -237,6 +243,7 @@
                 <div class="bubble">
                   <dl class="iconList">
                     <dt class="hot3"></dt>
+                    <dd class="icon_view">160 人浏览</dd>
                     <dd class="icon_comt">256 人回复</dd>
                   </dl>
                   <b>1分钟前</b>
@@ -250,6 +257,7 @@
                 <div class="bubble">
                   <dl class="iconList">
                     <dt class="hot4"></dt>
+                    <dd class="icon_view">160 人浏览</dd>
                     <dd class="icon_comt">256 人回复</dd>
                   </dl>
                   <b>1分钟前</b>
@@ -499,7 +507,7 @@
   <script type="text/javascript" src="assets/scripts/general.js"></script>
   <script type="text/javascript">
   	homeAccordion();
-  	swfobject.registerObject("videoMain", "9.0.0");
+  	swfobject.registerObject("homePlayer", "9.0.0");
   </script>
 </body>
 </html>

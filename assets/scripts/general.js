@@ -311,9 +311,14 @@ function subSlider(){
     }).mouseover(function(){
         $(this).css('display', 'none');
     });
-    $('.sub li a').mouseout(function(){
-        if (!$(this).parent('li').hasClass('on')) {
-            $(this).next('span').css('display', 'block');
+    $('.sub li').mouseover(function(){
+        $(this).children('span').css('display', 'none');
+        $(this).children('i').css('display', 'none');
+    });
+    $('.sub li').mouseout(function(){
+        if (!$(this).hasClass('on')) {
+            $(this).children('span').fadeIn(84);
+            $(this).children('i').fadeIn(84);
         }
     });
     var ulMargin = 0;
@@ -967,13 +972,18 @@ function doFindPass(){
             return false;
         } else {
             $.post(path_root + 'findpwd.action', $('#popup form').serialize(), function(data){
-                $('#popup').html('  	<a class="close"></a>\
+                if (data.ajaxMSG) {
+                    showPopup('error', '<p>' + data.ajaxMSG + '<p>');
+                    return false;
+                } else {
+                    $('#popup').html('  	<a class="close"></a>\
 	<div class="forget">\
 	  <p>我们已将一封包含重置密码链接的邮件送到您的邮箱 ' + values.uemail + ' 中，请查收。</p>\
 	  <p>*如您未收到此邮件，请发送邮件至community@ikea.com联系我们。</p>\
 	</div>');
-                centerPopup();
-                showPopup('other');
+                    centerPopup();
+                    showPopup('other');
+                }
             }, 'json');
         }
         return false;
