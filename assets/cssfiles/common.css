@@ -100,7 +100,8 @@ a:focus{outline:none}
 #pageNav li.navSquare a.on,#pageNav li.navSquare a:hover{background-position:left -145px}
 #pageNav li i{background:url(../images/icons.gif) no-repeat center -529px;font-size:0;height:7px;margin-top:29px;position:absolute}
 
-.userBar{clear:both;font-size:10px;text-align:right;width:360px}
+.userBar{font-size:10px;position:relative;width:690px}
+.userBar div{position:absolute;right:0;top:40px}
 .userBar dd,.userBar dt{float:right;}
 .userBar a{height:20px;line-height:20px}
 .userBar .icon{background:url(../images/icons.gif) no-repeat left -511px;margin-left:6px;padding-left:8px}
@@ -263,6 +264,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .rate_room li .vote b{background:url(../images/vote_left.gif) no-repeat;float:left;height:17px;width:57px}
 .rate_room li .vote i{background:url(../images/vote_right.gif) no-repeat;float:right;font-size:0;height:17px;width:4px}
 .square .rate_room li{margin-left:24px;width:160px}
+.square .rate_room .multiline li{margin-bottom:20px}
 
 /*****widget*****/
 .slidebar_holder{font-size:0;position:relative}
