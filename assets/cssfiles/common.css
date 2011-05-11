@@ -101,7 +101,7 @@ a:focus{outline:none}
 #pageNav li i{background:url(../images/icons.gif) no-repeat center -529px;font-size:0;height:7px;margin-top:29px;position:absolute}
 
 .userBar{font-size:10px;position:relative;width:690px}
-.userBar div{position:absolute;right:0;top:40px}
+.userBar div{position:absolute;right:0;top:40px;*+top:10px}
 .userBar dd,.userBar dt{float:right;}
 .userBar a{height:20px;line-height:20px}
 .userBar .icon{background:url(../images/icons.gif) no-repeat left -511px;margin-left:6px;padding-left:8px}
@@ -173,6 +173,8 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .icon_time{background-position:left -374px !important}
 .icon_view{background-position:left -334px !important}
 .icon_join{background-position:left -571px !important}
+.icon_more{background-position:left -394px !important}
+.icon_del{background-position:left -414px !important}
 .rank1{background-position:left -65px !important}
 .rank2{background-position:left -85px !important}
 .rank3{background-position:left -105px !important}
@@ -633,7 +635,9 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .tabpanel .member_list li span a{text-decoration:underline}
 .tabpanel .member_list li p{color:#787878}
 .tabpanel .member_list li img{margin-top:5px}
-.tabpanel .member_list li i{color:#b4b4b4;display:block;font-style:normal;line-height:25px;text-align:right}
+.tabpanel .member_list li i{color:#b4b4b4;float:left;font-style:normal;line-height:25px}
+.tabpanel .member_list li .stat{clear:both;height:25px}
+.tabpanel .member_list li .stat .iconList{margin:8px 0 0}
 .tabpanel .member_list li .iconList{float:right;margin:10px 0}
 .tabpanel .member_list li .iconList dd{margin:0 0 0 10px}
 .tabpanel .member_list li strong{border-left:solid 1px #000;border-right:solid 1px #000;color:#323232;margin:0 8px 0 6px;padding:0 6px}
