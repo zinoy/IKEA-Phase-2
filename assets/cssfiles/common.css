@@ -247,11 +247,11 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .discussion .bar span{background-position:left -80px}
 .discussion li{clear:both;height:50px;margin-bottom:10px;overflow:hidden}
 .discussion img{float:left}
-.discussion .bubble{-webkit-border-radius:2px 2px;-moz-border-radius:2px/2px;border:solid 2px #d8d8d8;border-radius:2px/2px;float:right;height:40px;padding:0 8px 6px 10px;position:relative;width:373px}
+.discussion .bubble{-webkit-border-radius:2px 2px;-moz-border-radius:2px/2px;border:solid 2px #d8d8d8;border-radius:2px/2px;float:right;height:34px;padding:6px 8px 6px 10px;position:relative;width:373px}
 .discussion li.alt .bubble{background-color:#f2f1e9}
-.discussion .iconList{margin:8px 0}
+.discussion .iconList{float:left;margin:8px 0 0}
 .discussion .bubble strong{border-left:solid 1px #000;border-right:solid 1px #000;padding:0 5px}
-.discussion .bubble b{color:#a2a2a2;float:right;font-size:10px;font-weight:normal}
+.discussion .bubble b{color:#a2a2a2;float:right;font-size:10px;font-weight:normal;margin-top:6px}
 .discussion .bubble span{color:#787878}
 .discussion .bubble i{background:url(../images/bubble_arrow.gif) no-repeat;font-size:0;height:9px;left:-7px;position:absolute;top:6px;width:7px;z-index:2}
 .discussion li.alt .bubble i{background-position:left -9px}
@@ -323,7 +323,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .hot_tags .s5{color:#999;font-size:14px}
 .hot_tags .s6{color:#999;font-size:12px}
 
-.logined .bg{background-color:#e6e6e6}
+.logined .bg{background-color:#f3f3f3}
 .logined h4{font-size:14px;margin:3px 0 0;overflow:hidden;padding-left:4px}
 .logined .user_avatar{padding:13px 0 0 16px;position:relative;width:164px}
 .logined .user_avatar div{width:111px}
