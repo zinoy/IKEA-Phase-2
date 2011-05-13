@@ -132,7 +132,7 @@ a:focus{outline:none}
 .member #content{background-image:url(../images/bgline_m.gif)}
 .member #content.s{background-image:url(../images/bgline_m_s.gif)}
 .center #content,.event #content,.topic #content,.media #content,.square #content{background-image:url(../images/bgline_q.gif)}
-.event #content.m,.search #content{background:none}
+.event #content.m,.search #content,.terms #content{background:none}
 
 h2{margin:0 0 15px}
 h2.bar{border-bottom:solid 2px #ffbe0a;font-size:0;height:20px;position:relative}
@@ -219,9 +219,9 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .hfcenter .top h4,.ikea_events .top h4{margin:10px 0 10px;overflow:hidden;padding-left:10px;white-space:nowrap}
 .hfcenter .top .iconList,.ikea_events .top .iconList{margin:8px 0 10px}
 .hfcenter .top .iconList dd,.ikea_events .top .iconList dd{margin:0 0 0 10px}
-.hot_list li,.event_list li{border-bottom:solid 1px #e6e6e6;clear:both;float:left;margin-top:15px;padding-bottom:15px;position:relative;width:200px}
+.hot_list li,.event_list li{border-bottom:solid 1px #e6e6e6;clear:both;float:left;margin-top:15px;padding-bottom:15px;position:relative;width:180px}
 .hot_list li.f,.event_list li.f{margin-top:0}
-.hot_list li div,.event_list li div{width:118px}
+.hot_list li div,.event_list li div{width:98px}
 .hot_list li dl,.event_list li dl{margin:5px 0 0}
 .my_activity .event_list li{width:712px}
 .my_activity .event_list li div{width:632px}
@@ -436,7 +436,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .state a.rbtn i{background:url(../images/vote_right.gif) no-repeat;float:left;font-size:0;height:17px;width:4px}
 .state a.btn_like b{background:url(../images/square/like_left.gif) no-repeat;float:left;height:17px;margin-right:8px;width:56px}
 .post{clear:left;margin-bottom:15px;overflow:hidden}
-.post .textbox{height:105px;margin:5px 0 10px;padding:3px;position:relative}
+.post .textbox{margin:5px 0 10px;padding:3px;position:relative}
 .post textarea{border:0;font-size:12px;height:102px;resize:none;width:662px}
 .post .arrow{background:url(../images/center/icons/form_arrow.gif) no-repeat;height:20px;left:-11px;position:absolute;top:45px;width:11px;z-index:2}
 
@@ -750,6 +750,8 @@ body.frame{background:none}
 .article h3{font-size:12px;margin:20px 0}
 .article p{line-height:20px;margin-bottom:15px}
 .article span.indent{display:block;padding-left:20px}
+
+.terms .article{border:0}
 
 .scroll-pane{height:618px;padding-right:15px}
 .scroll-pane .jspVerticalBar{background:none;width:7px}
