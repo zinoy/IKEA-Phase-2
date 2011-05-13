@@ -651,6 +651,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .my_follow li a:hover,.my_follow li p a,.my_followed li a:hover,.my_followed li p a{text-decoration:underline;}
 .my_follow li p,.my_followed li p{background:url("../images/members/member_listicon.gif") no-repeat left 5px;color:#787878;margin:8px 0 0 10px;padding-left:11px}
 .my_follow li p i,.my_followed li p i{float:right;font-size:10px;font-style:normal}
+.my_follow li .action,.my_followed li .action{float:right}
 
 .user_photos li{margin-left:29px}
 
@@ -665,6 +666,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .his_followed .bar span{background-position:left -200px}
 .my_follow .bar span{background-position:left -220px}
 .my_followed .bar span{background-position:left -240px}
+.my_tag .bar span{background-position:left -260px}
 
 /*****event*****/
 .event_news .bar span{background-position:left top}
