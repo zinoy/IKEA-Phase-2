@@ -185,6 +185,16 @@ function swapImg(evt){
 function homeAccordion(){
     var act = function(){
         if ($(this).hasClass('on')) {
+            var na;
+            $('.hfcenter > a').each(function(i, n){
+                if (!$(n).hasClass('on')) {
+                    na = n;
+					return false;
+                }
+            });
+			$('.hfcenter .acc').slideUp('normal');
+			$('.hfcenter a').removeClass('on');
+			$(na).addClass('on').next('.acc').slideDown('normal');
             return false;
         }
         $('.hfcenter .acc').slideUp('normal');

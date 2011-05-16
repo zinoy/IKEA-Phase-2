@@ -111,7 +111,7 @@ a:focus{outline:none}
 /*****footer start*****/
 #sitemap{background-color:#fff;margin:5px auto 0;padding:30px;width:940px}
 #sitemap ul{float:left}
-#sitemap li{border-left:solid 1px #e6e6e6;float:left;margin-left:60px;padding-left:60px}
+#sitemap li{border-left:solid 1px #e6e6e6;float:left;margin-left:58px;padding-left:58px}
 #sitemap li.f{border:0;margin:0}
 #sitemap dt{font-weight:bold}
 #sitemap dd{margin-top:10px}
@@ -283,6 +283,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 #navSearch input{border:0;color:#323232;font:12px "lucida grande",tahoma,verdana,arial,sans-serif;margin:0 18px 0 0;outline:none;padding:1px 0 2px;width:156px}
 #navSearch button{background:url(../images/pageNav.gif) no-repeat top right;border:0;height:18px;padding:0;position:absolute;right:1px;top:0;width:18px}
 
+.kaptcha:hover{text-decoration:none !important}
 .login_form .bar span{background-position:left -40px}
 #userSignin p,.popup .register p,.popup .signin p,.popup .forgetForm p{margin-bottom:10px}
 #userSignin p{height:35px}
@@ -782,7 +783,7 @@ body.frame{background:none}
 .group_list li.space{height:28px;width:30px}
 .group_list li div{border:solid 1px #ffbe0a;float:right;height:86px;margin-left:2px;padding:1px;width:184px}
 .group_list li div h3{background-color:#ffbe0a;font-size:12px;height:27px;line-height:27px;margin:0;padding:0 0 0 5px}
-.group_list li div p{color:#6e6d6c;margin-top:5px;padding-left:5px}
+.group_list li div p{color:#6e6d6c;height:36px;margin-top:4px;padding-left:5px}
 .group_list li div .join{float:right;margin-right:12px;margin-top:9px}
 .group_list li .iconList{margin-left:7px}
 
