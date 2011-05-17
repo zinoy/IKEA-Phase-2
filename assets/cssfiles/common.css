@@ -25,7 +25,7 @@ a:focus{outline:none}
 .new{background:url(../images/icons.gif) no-repeat left -4px;display:block;height:13px;left:0;position:absolute;top:0;width:25px;z-index:5}
 .summary{color:#787878 !important;padding:10px 0 0}
 .gbtn{background:url(../images/buttons.gif) no-repeat left -15px;border:0;height:18px;line-height:18px;text-align:center;text-decoration:none;width:85px}
-.gbtn:hover{background-position:left -48px;}
+.gbtn:hover{background-position:left -48px;text-decoration:none}
 .gbtn span{color:#787878;font:10px/18px "微软雅黑"}
 .gbtn:hover span,.highlight span{color:#323232}
 .iptField,.longField,.tinyField{border:solid 1px #b4b4b4;color:#787878;font:10px "lucida grande",tahoma,verdana,arial,sans-serif;height:16px}
@@ -553,7 +553,7 @@ h4.title,h4.title a{font-size:12px;margin:0}
 .user_edit .profile .l{border-top:solid 1px #e3e0d4;color:#7f7f7f;float:none;margin:0;padding-top:12px}
 .user_edit .profile span label{float:none}
 .user_edit .profile span i{display:inline-block;font-style:normal;margin:0 15px 5px 0;white-space:nowrap}
-.user_edit .profile .h span{width:592px}
+.user_edit .profile .h span{display:inline;width:592px}
 
 .user_edit .account label{width:96px}
 
@@ -838,6 +838,15 @@ h1.sub{font-size:20px;margin-top:0}
 .sp_discussion .main blockquote{background-color:#f1f0f0;margin:10px 0 40px;padding:10px 57px}
 .sp_discussion .main blockquote p{color:#464646;font-size:12px;margin-bottom:5px}
 .sp_discussion .main blockquote span{color:#969696;display:block}
+.sp_discussion .main .poll{margin:20px 0;width:520px}
+.sp_discussion .main .poll td{cursor:pointer;padding:5px 0}
+.sp_discussion .main .poll .item{padding-left:4px;width:156px}
+.sp_discussion .main .poll .chart{width:200px}
+.sp_discussion .main .poll .chart div{background-color:#b2b2b2;font-size:0;height:10px}
+.sp_discussion .main .poll .chart span{background-color:#ffbe0a;border-right:solid 1px #a2a2a2;display:block;font-size:0;height:10px}
+.sp_discussion .main .poll .status{padding-left:20px}
+.sp_discussion .main .poll .input{width:20px}
+
 .sp_discussion .reply{bottom:10px;position:absolute;right:10px;width:524px;z-index:30}
 .sp_discussion .reply span{color:#989898}
 .sp_discussion .reply a{float:right;margin-left:4px}

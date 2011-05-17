@@ -142,6 +142,27 @@ $(document).ready(function(){
             return false;
         });
     });
+    $('.gbtn').hover(function(){
+        $(this).css('background-position', 'left -48px');
+        $(this).children('span').css('color', '#323232');
+    }, function(){
+        $(this).css('background-position', 'left -15px');
+        if (!$(this).hasClass('highlight')) {
+            $(this).children('span').css('color', '#787878');
+        }
+    });
+    $('.main .poll tr').hover(function(){
+        $(this).children('td').css({
+            'background-color': '#fafafa'
+        });
+    }, function(){
+        $(this).children('td').css({
+            background: 'none'
+        });
+    });
+    $('.main .poll tr').click(function(){
+        $(this).find(':radio,:checkbox').get(0).checked = true;
+    });
     initSliderBar();
     bindButtons();
     hfCenter();
@@ -189,12 +210,12 @@ function homeAccordion(){
             $('.hfcenter > a').each(function(i, n){
                 if (!$(n).hasClass('on')) {
                     na = n;
-					return false;
+                    return false;
                 }
             });
-			$('.hfcenter .acc').slideUp('normal');
-			$('.hfcenter a').removeClass('on');
-			$(na).addClass('on').next('.acc').slideDown('normal');
+            $('.hfcenter .acc').slideUp('normal');
+            $('.hfcenter a').removeClass('on');
+            $(na).addClass('on').next('.acc').slideDown('normal');
             return false;
         }
         $('.hfcenter .acc').slideUp('normal');
